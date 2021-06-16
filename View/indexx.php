@@ -237,10 +237,7 @@
   display: table;
 }
 
-
-    
 </style>
-
 <body>
     <div id="header-hero-container">
 <!-- Header -->
@@ -255,11 +252,12 @@
                     </button>
                     
                     <ul id="nav-menu" > 
-                        <li><a href="indexx.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position: absolute; left:100px"></a></li>
+                        <li><a href="indexx.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:47px;"></a></li>
                         <div style = "position: absolute; right: 150px;">
                         <li><a href="aboutus.php">About Us</a></li>
-                        <li><a href="register.php">Sign-Up</a></li>
-                        <li><a href="login.php">Sign-In</a></li> 
+                        <li><a href="Signup.php">Sign-Up</a></li>
+                        <li><a href="login.php">Sign-In</a></li>
+                        
                         
                             </div>
                          

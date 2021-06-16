@@ -3,10 +3,10 @@
     <div id="footer-subscribe">
         <div class="container">
 <div class="flex container">
-					<div class="footer-about">
-                        <h3><font color="red">Get in <span><font color="white"> Touch</font></span></font> </h3>
+					<div class="footer-about" style="text-align: left">
+                        <h3><font color="red">Get in <span><font color="white"> Touch</font></span></font></h3>
                        <ul>
-                             <li style="text-align: left"><i class="fa fa-history" style="color:red;"></i> <span style="font-size: 14px;"><font color="white">&nbsp;2000.</font>
+                             <li style="text-align:"><i class="fa fa-history" style="color:red;"></i> <span style="font-size: 14px;"><font color="white">&nbsp;2000.</font>
                             </span> 
                              
                              <li style="text-align: left"><i class="fa fa-home" style="color:red;"></i> <span style="font-size: 14px;"><font color="white">&nbsp; Passage Inside Stadium, Al Estad, Nasr City, Cairo</font>
@@ -20,40 +20,29 @@
                             </ul>
                         </div>
         
-<div class="footer-subscribe"> 
+<div class="footer-subscribe" style="text-align: center"> 
 <h3><font color="red">Follow <span><font color="white"> Us</font></span></font> </h3>
 <ul>
-<li><a href="https://www.facebook.com/profile.php?id=100003108537446"><span class="fab fa-facebook-f" style="color:LightBlue;"></span></a></li>
-<li><a href="https://instagram.com/essahussein123?utm_medium=copy_link"><span class="fab fa-instagram" style="color:MediumVioletRed;"></span></a></li>
-<li><a href="https://www.youtube.com/channel/UCMbf16ah13IE-aj2IjWaGkw"><span class="fab fa-youtube" style="color:red;"></span></a></li>
+<li style="text-align: center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/profile.php?id=100003108537446"><span class="fab fa-facebook-f" style="color:LightBlue;"></span></a></li>
+<li style="text-align: center"><a href="https://instagram.com/essahussein123?utm_medium=copy_link"><span class="fab fa-instagram" style="color:MediumVioletRed;"></span></a></li>
+<li style="text-align: center"><a href="https://www.youtube.com/channel/UCMbf16ah13IE-aj2IjWaGkw"><span class="fab fa-youtube" style="color:red;"></span></a></li>
 </ul>
 </div>
     
-    <div class="footer-subscribe">
-            <h3><font color="red">Company <span><font color="white"> Info</font></span></font> </h3>
+    <div class="footer-about"> 
+            <h3><font color="red">Company <span><font color="white" > Info</font></span></font> </h3>
                        <ul>
-                           <li style="text-align: left"><a href="indexx.php"> <span style="font-size: 14px;">&nbsp;Home Page
-                           </span> </a>
-                             
-                             <li style="text-align: left"><a href="aboutus.php"> <span style="font-size: 14px;">&nbsp;About Us</span> </a>
-                                 
-                             <li style="text-align: left"><a href="#"> <span style="font-size: 14px;"> &nbsp;Terms & Condition </span> </a>
+                           <li style="text-align: left"><a href="indexx.php"style = "Text-decoration: none; color: white;"> <span style="font-size: 14px;">&nbsp;Home Page </span> </a>
+                               
+                            <li style="text-align: left"><a href="aboutus.php"style = "Text-decoration: none; color: white;"> <span style="font-size: 14px;">&nbsp;About us<br>   </span> </a>
+                                
+                             <li style="text-align: left"><a href="Terms and Condition.php" style = "Text-decoration: none; color: white;"> <span style="font-size: 14px;"> &nbsp;Terms & Condition </span> </a>
                            </li>
+                               
                             </ul>
                         </div>
 
-    <div class="footer-subscribe">
-            <h3><font color="red">Company <span><font color="white"> Info</font></span></font> </h3>
-                       <ul>
-                           <li style="text-align: left"><a href="#"> <span style="font-size: 14px;">&nbsp;Pyament Policy
-                           </span> </a>
-                             
-                             <li style="text-align: left"><a href="#"> <span style="font-size: 14px;">&nbsp;Shipping Policy </span> </a>
-                                 
-                             <li style="text-align: left"><a href="#"> <span style="font-size: 14px;"> &nbsp;Return Policy </span> </a>
-                           </li>
-                            </ul>
-                        </div>
+  
                     </div>
             <div class="flex container">
                     <div class="footer-payement">
@@ -62,23 +51,9 @@
                             <img src="images/Payments/payment-method.png" alt="Payment Method" />
                     </div>
                 </div>
-                 <div class="footer-payement">
-                     <div class="payment-security">
-                            <h3><font color="red">Secured <span><font color="white"> By:</font></span></font> </h3>
-                         <div class="column">
-                            <img src="images/Payments/godaddy.svg" alt="Payment Security" style="width:100%"/>
-                         </div>
-                         <div class="column">
-                            <img src="images/Payments/norton.svg" alt="Payment Security" style="width:100%"/>
-                         </div>
-                         <div class="column">
-                            <img src="images/Payments/ssl.svg" alt="Payment Security" style="width:100%"/>
-                         </div>
-                     </div>
-                    </div>
-                  </div>
-                </div>
             </div>
+        </div>
+    </div>
 
 <!-- Java Script -->
     <script>

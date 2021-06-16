@@ -239,11 +239,12 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
                     </button>
                     
                     <ul id="nav-menu"> 
-                        <li style="text-align: right"><a href="indexx.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:150px;height:100px;"></a></li>
-                        
-                        <li style="text-align: left"><a href="aboutus.php">About Us</a></li>
-                        <li style="text-align: left"><a href="login.php">Sign In</a></li> 
-                        
+                        <li><a href="indexx.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top: 30px;"></a></li>
+                        <div style = "position: fixed; right: 140px; top:55px;">
+                         <li><i class="fa fa-home"></i> <a href="indexx.php" style = "text-decoration: none;">Home</a></li>
+                        <li><a href="aboutus.php">About Us</a></li>
+                        <li><a href="login.php">Sign In</a></li> 
+                        </div>
                     </ul>
                 </nav>
             </div>
