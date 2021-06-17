@@ -4,7 +4,8 @@
 <?php
     session_start();
     require_once("navbar.php") ?>
-                                                <!-- Style -->
+    
+<!-- Style -->
 <style>
 		#hero {
 		  background: url('images/all-icon/tabletennis-equipment.jpg') center center no-repeat;
