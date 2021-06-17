@@ -17,7 +17,6 @@
 		  width: 100%;
 	  }
 	  
-	  
 .sidepanel {
   height: 1000px; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -248,7 +247,6 @@ for($j=0; $j<($no_of_rows); $j++)
             echo "</div>";
         echo"</div>";
     echo"</div>";
-        
     }
         }
         
