@@ -241,6 +241,7 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
                     <ul id="nav-menu"> 
                         <li><a href="indexx.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top: 30px;"></a></li>
                         <div style = "position: fixed; right: 140px; top:55px;">
+                        
                          <li><i class="fa fa-home"></i> <a href="indexx.php" style = "text-decoration: none;">Home</a></li>
                         <li><a href="aboutus.php">About Us</a></li>
                         <li><a href="login.php">Sign In</a></li> 
@@ -271,15 +272,15 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
 					
 						 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 						 
-							<div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+							<div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>" >
                 <label>Username</label>
                 <input type="text" name="username" class="form-control" value="<?php echo $username; ?>" required>
                 <span class="help-block"><?php echo $username_err; ?></span>
                 </div>    
 	
-			   <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+			   <div class="form-group  <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label>Password</label>
-                <input type="password" name="password" class="form-control" value="<?php echo $password; ?>" required>
+                <input type="password" name="password" class="form-control"  value="<?php echo $password; ?>" required>
                 <span class="help-block"><?php echo $password_err; ?></span>
                 </div>
 				
@@ -289,7 +290,7 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
                  </div>
 							<br>
-							<button class="rounded">Sign Up</button>
+							<button class="rounded" style="background-color: red;">Sign Up</button>
 							<p>Already have an account? <a href="login.php">Login here</a>.</p>
 						</form>
 					</div>

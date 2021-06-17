@@ -140,7 +140,7 @@
                                                 <!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My Messages </a>
+                <a id="logo" href="#"> My Messages </a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -149,16 +149,19 @@
                     </button>
                     
                     <ul id="nav-menu"> 
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 60px; top:45px;">
+                        <li><a href="Student.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:7px;"></a></li>
+                        <li><i class="fa fa-home"></i> <a href="Student.php" style = "text-decoration: none;">Home</a></li>
+                        <li><a href="SearchCourses.php"> Search Products </a></li>
                         
-                        <li style="text-align: left"><a href="SearchCourses.php"> Search Courses </a></li>
-                        <li style="text-align: left"><a href="ViewProfile.php?id=<?php echo $_SESSION["id"];?>" > Profile </a></li>
-                        <li style="text-align: left"><a href="WriteQuestion.php"> Write Question </a></li>
-                        <li style="text-align: left"><a href="AllQuestions.php"> All Questions </a></li>
-                        <li style="text-align: left"><a href="suggest.php"> Contact Us </a></li> 
-                        <li style="text-align: left"><a href="MyCart.php?id=<?php echo $_SESSION["id"];?>" > My Cart </a></li>
-                        <li style="text-align: left"><a href="AllCourses.php"> Courses </a></li>
-                        <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
+                        <li><a href="WriteQuestion.php"> Write Question </a></li>
+                        <li><a href="AllQuestions.php"> All Questions </a></li>
+                         
+                        <li><a href="MyCart.php?id=<?php echo $_SESSION["id"];?>" > My Cart </a></li>
+                        <li><a href="ViewProfile.php?id=<?php echo $_SESSION["id"];?>" > MyProfile </a></li> 
                         
+                        <li><a href="logout.php"> Logout </a></li> 
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -173,7 +176,7 @@
       <div class="hero-text">
           
           <!-- F el noss -->
-<a href="Student.php"><img src="images/miu-logo.jpg" alt="Logo" style="width:150px;height:150px;"></a>
+
           
        </div>
       </section>

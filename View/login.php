@@ -212,6 +212,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   float: right;
   padding-right: 8px;
 }
+    
+
+
 
     
 
@@ -276,7 +279,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
 							<br>
-							<button class="rounded" style="background-color:red">Login</button>
+							<button class="rounded" style="background-color:red;  ">Login</button>
+                            
 							<p>Don't have an account? <a href="Signup.php">Sign up now</a>.</p>
 						</form>
 					</div>

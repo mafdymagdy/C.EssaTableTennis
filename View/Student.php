@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
+    
 <title>C.Essa Table Tennis</title>
-
 <?php 
     session_start();
     require_once("navbar.php") 
 ?>
-
+    
 <!-- Style -->
 <style>
     
   #hero {
-    background: url('images/about/Table Tennis.jpg') center center no-repeat;
+    background: url('images/about/TableTennisTablee.jpg') center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -68,10 +68,12 @@
   border: none;
 }
 
-.openbtn:hover 
-{
+.openbtn:hover {
   background-color: #FFA500;
 }	
+
+
+
 
 /* Fixed sidenav, full height */
 .sidenav {
@@ -133,34 +135,34 @@
 }
     
 </style>
- <!-- Header -->
+                                                <!-- Header -->
 <header>
-            <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Trainee </a>
+            <div class="flex container" >
+                <a id="logo" href="#">Trainee </a>
                 <nav>
-                    <button id="nav-toggle" class="hamburger-menu">
-                        <span class="strip"></span>
-                        <span class="strip"></span>
-                        <span class="strip"></span>
-                    </button>
                     
-                    <ul id="nav-menu">
-                        <li style="text-align: left"><a href="SearchCourses.php"> Search Courses </a></li>
-                        <li style="text-align: left"><a href="ViewProfile.php?id=<?php echo $_SESSION["id"];?>" > Profile </a></li>
-                        <li style="text-align: left"><a href="WriteQuestion.php"> Write Question </a></li>
-                        <li style="text-align: left"><a href="AllQuestions.php"> All Questions </a></li>
-                        <li style="text-align: left"><a href="suggest.php"> Contact Us </a></li> 
-                        <li style="text-align: left"><a href="MessageHistory.php?id=<?php echo $_SESSION["id"];?>" > Messages History </a></li> 
-                        <li style="text-align: left"><a href="MyCart.php?id=<?php echo $_SESSION["id"];?>" > My Cart </a></li>
-                        <li style="text-align: left"><a href="AllCourses.php"> Courses </a></li>
-                        <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
+                    
+                    <ul id="nav-menu"><br>
+                        <div style = "position: fixed; right: 100px; top:30px;">
+                        <li><a href="AllCourses.php"> Products </a></li>
+                        <li><a href="SearchCourses.php"> Search Products </a></li>
+                        <li><a href="suggest.php"> Product Inquiry </a></li>
+                        <li><a href="WriteQuestion.php"> Write Question </a></li>
+                        <li><a href="AllQuestions.php"> All Questions </a></li>
+                        <li><a href="MessageHistory.php?id=<?php echo $_SESSION["id"];?>" > Messages History </a></li> 
+                        <li><a href="MyCart.php?id=<?php echo $_SESSION["id"];?>" > My Cart </a></li>
+                        <li><a href="ViewProfile.php?id=<?php echo $_SESSION["id"];?>" > MyProfile </a></li> 
+                        
+                        <li><a href="logout.php"> Logout </a></li> 
+                        
+                        </div>
+                
                     </ul>
                 </nav>
             </div>
     
     </header>    
-  
- <!-- Body -->
+                                                <!-- Body -->
 <body>
     <div id="header-hero-container">
         <div class="page-header">
@@ -177,8 +179,9 @@
        </div>
       </section>
   </div>
+</div>
     
 <!-- Footer -->
         <?php require_once("Footer.php") ?>
-</body>
+</body>      
 </html> 

@@ -191,7 +191,7 @@ foreach ($model->users2 as $user)
                                                 <!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Edit My Profile </a>
+                <a id="logo" href="#"> Edit My Profile </a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -200,7 +200,9 @@ foreach ($model->users2 as $user)
                     </button>
                     
                     <ul id="nav-menu"> 
-                        <li style="text-align: right"><a href="Student.php"><img src="images/miu-logo.jpg" alt="Logo" style="width:50px;height:50px;"></a></li>
+                        <li><a href="Student.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:7px;"></a></li>
+                        <li><i class="fa fa-home"></i> <a href="Student.php" style = "text-decoration: none;">Home</a></li>
+
                         <li style="text-align: left"><a href="ViewProfile.php?id=<?php echo $_SESSION["id"];?>" > My Profile </a></li> 
                         
                         <li style="text-align: left"><a href="logout.php"> Logout </a></li> 

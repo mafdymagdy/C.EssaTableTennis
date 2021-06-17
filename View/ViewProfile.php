@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
 <title> My Profile </title>
 <?php 
     session_start();
@@ -56,7 +55,7 @@ foreach ($model->users2 as $user)
 <style>
     
   #hero {
-    background: url('images/all-icon/studentprofile.gif') center center no-repeat;
+    background: url('images/all-icon/MyProfile.png') center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -183,7 +182,7 @@ foreach ($model->users2 as $user)
                                                 <!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My Personal Profile </a>
+                <a id="logo" href="#"> My Personal Profile </a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -192,6 +191,8 @@ foreach ($model->users2 as $user)
                     </button>
                     
                     <ul id="nav-menu"> 
+                        <li><a href="Student.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:7px;"></a></li>
+                        <li><i class="fa fa-home"></i> <a href="Student.php" style = "text-decoration: none;">Home</a></li>
                         
                         <li style="text-align: left"><a href="editProfile.php?id=<?php echo $_SESSION["id"];?>" > Edit My Profile </a></li> 
 
@@ -211,7 +212,7 @@ foreach ($model->users2 as $user)
       <div class="hero-text">
           
           <!-- F el noss -->
-<a href="Student.php"><img src="images/miu-logo.jpg" alt="Logo" style="width:150px;height:150px;"></a>
+
           
        </div>
       </section>
