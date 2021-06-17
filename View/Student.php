@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <title>C.Essa Table Tennis</title>
-  <?php require_once("navbar.php")?>
 
 <?php 
     session_start();
@@ -160,6 +159,7 @@
             </div>
     
     </header>    
+  
  <!-- Body -->
 <body>
     <div id="header-hero-container">
