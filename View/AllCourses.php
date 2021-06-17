@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
-    
-<title> CSC Courses </title>
+<html> 
+<title>C.Essa Table Tennis</title>
 <?php
     session_start();
     require_once("navbar.php") ?>
                                                 <!-- Style -->
 <style>
 		#hero {
-		  background: url('images/all-icon/coursess.png') center center no-repeat;
+		  background: url('images/all-icon/tabletennis-equipment.jpg') center center no-repeat;
 		  background-size: cover;
 		  position: absolute;
 		  top: 0;
@@ -69,9 +68,6 @@
 .openbtn:hover {
   background-color: #FFA500;
 }	
-
-
-
 
 /* Fixed sidenav, full height */
 .sidenav {
@@ -207,7 +203,6 @@
                         <li><a href="MessageHistory.php?id=<?php echo $_SESSION["id"];?>" > Messages History </a></li> 
                         <li><a href="MyCart.php?id=<?php echo $_SESSION["id"];?>" > My Cart </a></li>
                         <li><a href="ViewProfile.php?id=<?php echo $_SESSION["id"];?>" > MyProfile </a></li> 
-                        
                         <li><a href="logout.php"> Logout </a></li> 
                         </div>
                     </ul>
@@ -224,13 +219,9 @@
       <div class="hero-text">
           
           <!-- F el noss -->
-
-          
        </div>
       </section>
   </div>
-    
-    
     	<section id='item'>
     <?php
         define('__ROOT__', "../");
@@ -266,8 +257,7 @@ for($j=0; $j<($no_of_rows); $j++)
 </div>
 	
 	</section>
-                                                    <!-- Footer -->
+<!-- Footer -->
         <?php require_once("Footer.php") ?>
 </body>
-       
 </html> 
