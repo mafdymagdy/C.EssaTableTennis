@@ -40,7 +40,7 @@ foreach ($model->courses as $course)
     <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://localhost/work2/lib/css/mycss.css"> 
+  <link rel="stylesheet" href="http://localhost/work3/lib/css/mycss.css"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
@@ -232,8 +232,8 @@ foreach ($model->courses as $course)
     
         <div class="divTableCell"> 
             <?php 
-    $mysqli=new MySQLi('localhost','root','','work2');
-    $result= $mysqli ->query("select * from faculties");
+    $mysqli=new MySQLi('localhost','root','','work3');
+    $result= $mysqli ->query("select * from levels");
 ?>
             <select id= "course_faculty_id"name="course_faculty_id">
             

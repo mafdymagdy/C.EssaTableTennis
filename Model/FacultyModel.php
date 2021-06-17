@@ -7,7 +7,7 @@ class FacultyModel extends Model
 {
     public $id;
     public $faculty;
-    public $faculties;
+    public $levels;
     
   function __construct($id) 
   {
@@ -22,12 +22,12 @@ class FacultyModel extends Model
   }
 function fillArray() 
 {
-    $this->faculties = array();
+    $this->levels = array();
     $this->dbh = $this->connect();
-    $result = $this->readFaculties();
+    $result = $this->readlevels();
     while ($row = $result->fetch_assoc()) 
     {
-     array_push($this->faculties, new FacultyModel($row["id"],$row["faculty"]));
+     array_push($this->levels, new FacultyModel($row["id"],$row["faculty"]));
     }
 }
     function getFaculty() 
@@ -39,7 +39,6 @@ function fillArray()
   {
     return $this->faculty = $faculty;
   }
-  
 
   function getID() {
     return $this->id;
@@ -47,7 +46,7 @@ function fillArray()
 
   function readFaculty($id)
   {
-    $sql = "SELECT * FROM faculties where id=".$id;
+    $sql = "SELECT * FROM levels where id=".$id;
     $dbh = $this->connect();
     $result = $dbh->query($sql);
     if ($result->num_rows == 1)
@@ -62,9 +61,9 @@ function fillArray()
     //$this->conn->close();
   }
     
-    function readFaculties()
+    function readlevels()
   {
-    $sql = "SELECT * FROM faculties";
+    $sql = "SELECT * FROM levels";
     $dbh = $this->connect();
     $result = $dbh->query($sql);
     if ($result->num_rows == 1)
@@ -72,8 +71,6 @@ function fillArray()
         $row = $dbh->fetchRow();
         $this->id = $row["id"];
         $this->name = $row["faculty"];
-    
-        
     }
     else 
     {
@@ -82,9 +79,9 @@ function fillArray()
     //$this->conn->close();
   }
     
-    public function SelectAllFaculties()
+    public function SelectAlllevels()
 	{
-		$sql="SELECT * FROM faculties ";
+		$sql="SELECT * FROM levels ";
 		$i=0;
 		$ObjArray=array();
         $result = $this->dbh->query($sql);

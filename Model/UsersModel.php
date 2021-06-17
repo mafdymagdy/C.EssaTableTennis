@@ -14,7 +14,8 @@ class UsersModel extends Model
 		$this->fillArray2();
 	}
 
-	function fillArray() {
+	function fillArray() 
+    {
 		$this->users = array();
 		$this->dbh = $this->connect();
 		$result = $this->readAdmins();
@@ -27,7 +28,7 @@ class UsersModel extends Model
     function fillArray2() {
 		$this->users2 = array();
 		$this->dbh = $this->connect();
-		$result = $this->readStudents();
+		$result = $this->readtrainees();
 		while ($row = $result->fetch_assoc()) 
         {
 			array_push($this->users2, new UserModel($row["id"],$row["username"],$row["password"],$row["created_at"],$row["user_type_id"],$row["faculty_id"],$row["img"]));
@@ -42,7 +43,8 @@ class UsersModel extends Model
 		return $this->users;
 	}
 
-	function readAdmins(){
+	function readAdmins()
+    {
 		$sql = "SELECT * FROM user WHERE user_type_id=2";
 
 		$result = $this->dbh->query($sql);
@@ -56,7 +58,7 @@ class UsersModel extends Model
 	}
     
 
-	function readStudents(){
+	function readtrainees(){
 		$sql = "SELECT * FROM user WHERE user_type_id=1";
 
 		$result = $this->dbh->query($sql);
@@ -131,11 +133,10 @@ class UsersModel extends Model
 		$row = $dbh->fetchRow();
         return $row;
 		} 
-//		else{
+//		else
+//       {
 //			echo "ERROR: Could not able to execute $sql. " . $conn->error;
 //		}
-
     }
-    
 }
 ?>

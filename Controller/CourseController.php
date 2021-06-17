@@ -1,6 +1,4 @@
 <?php
-
-  
   require_once(__ROOT__ . "Controller/Controller.php");
 
 class CourseController extends Controller
@@ -21,18 +19,15 @@ class CourseController extends Controller
 //             echo 'Problem: please check your inputs';
 //        }
 
-      
     }
     
         public function insertcart() 
     {
-        
 	$user_id = $_REQUEST['user_id'];
 	$user_name = $_REQUEST['user_name'];
 	$course_id = $_REQUEST['course_id'];
 	$course_name = $_REQUEST['course_name'];
 	$course_pricee = $_REQUEST['course_pricee'];
-
       
 //        if(!preg_match(!empty($question)))
 //         {
@@ -43,9 +38,8 @@ class CourseController extends Controller
 //           // Problem: please check your inputs
 //             echo 'Problem: please check your inputs';
 //        }
-        
     }
-
+    
     public function edit()
     {
         $course_faculty_id = $_REQUEST['course_faculty_id'];

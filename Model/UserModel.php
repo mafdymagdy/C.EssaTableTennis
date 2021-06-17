@@ -12,10 +12,8 @@ class UserModel extends Model
 	private $user_type_id;
 	private $faculty_id;
 	private $img;
-
- 
     
-      function __construct($id) 
+    function __construct($id) 
   {
     if($id!=null)
     {
@@ -48,32 +46,35 @@ class UserModel extends Model
     return $this->created_at = $created_at;
   }
     
-    function getUserTypeId() {
+    function getUserTypeId() 
+  {
     return $this->user_type_id;
   }
-  function setUserTypeId($user_type_id) {
+    function setUserTypeId($user_type_id) 
+  {
     return $this->user_type_id = $user_type_id;
   }
-        function getFacultyId() {
+    function getFacultyId() 
+  {
     return $this->faculty_id;
   }
-  function setFacultyId($faculty_id) {
+    function setFacultyId($faculty_id) 
+  {
     return $this->faculty_id = $faculty_id;
   }
     
-    function getImage() {
+    function getImage() 
+    {
     return $this->img;
   }
-  function setImage($img) {
+  function setImage($img) 
+  {
     return $this->img = $img;
   }
- 
 
   function getID() {
     return $this->id;
   }
-
-
     
       function readUser($id)
   {

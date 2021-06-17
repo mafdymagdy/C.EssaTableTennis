@@ -1,5 +1,4 @@
 <?php
-
 require_once(__ROOT__ . "Controller/Controller.php");
 class UserController extends Controller
 {
@@ -26,8 +25,6 @@ class UserController extends Controller
 //           // Problem: please check your inputs
 //             echo 'Problem: please check your inputs';
 //        }
-
-      
     }
 	
 	public function delete()
@@ -35,6 +32,5 @@ class UserController extends Controller
         $id = $_REQUEST['id'];
 		$this->model->deleteUser($id);
 	}
-    
 }
 ?>

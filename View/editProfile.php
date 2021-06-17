@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
 <title> Edit My Profile </title>
 <?php 
     session_start();
@@ -26,8 +25,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 
 ?>
     
-    <?php
-    
+<?php    
 $id = $_GET['id'];
 foreach ($model->users2 as $user)
 {
@@ -44,27 +42,25 @@ foreach ($model->users2 as $user)
         $faculty_name=$faculty->faculty;
         $usertype= new UserTypesModel($studentUserTypeId);
         $usertype_name=$usertype->type;
-        
     }
 }
 
 ?>
     
-                                                <!-- CSS -->
+<!-- CSS -->
     <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://localhost/work2/lib/css/mycss.css"> 
+  <link rel="stylesheet" href="http://localhost/work3/lib/css/mycss.css"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
 </head>
     
-                                                <!-- Style -->
+<!-- Style -->
 <style>
-    
   #hero {
-    background: url('images/about/about-1.jpg') center center no-repeat;
+    background: url('images/about/TableTennisTableee.jpg') center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -124,9 +120,6 @@ foreach ($model->users2 as $user)
 .openbtn:hover {
   background-color: #FFA500;
 }	
-
-
-
 
 /* Fixed sidenav, full height */
 .sidenav {
@@ -220,30 +213,29 @@ foreach ($model->users2 as $user)
       <div class="fade"></div>
       <div class="hero-text">
           
-          <!-- F el noss -->
-          
+ <!-- F el noss -->  
        </div>
       </section>
   </div>
     
-                                                <!-- Table form -->
-  
+<!-- Table form -->
     <form  method = "post" action="ViewProfile.php?action=edit">
 <div class="container jumbotron text-center">
 <div class="divTable paleBlueRows">
 <div class="divTableHeading">
 <div class="divTableRow">
-    <div class="divTableHead"> Image </div>
-    <div class="divTableHead"> Student Name </div>
-    <div class="divTableHead">Created At </div>
-    <div class="divTableHead">Faculty </div>
+    <div class="divTableHead"> Profile Picture </div>
+    <div class="divTableHead"> UserName </div>
+    <div class="divTableHead"> Created At </div>
+    <div class="divTableHead"> Classification </div>
     <div class="divTableHead"> Type </div>
 </div>
 </div>
 <div class="divTableRow">
     <div class="divTableCell"> 
-        <label>Edit Image:</label>
         <img src='images/Students/<?php echo $studentImage ?>' id='disp_img' height="100px" width="100px">
+        <br>
+        <label>Edit Image:</label>
         <input type="file"  id="img"  name="img" onchange="change_img(this)" required>
     </div>
     
@@ -257,11 +249,10 @@ foreach ($model->users2 as $user)
     
         <div class="divTableCell"> 
             <?php 
-    $mysqli=new MySQLi('localhost','root','','work2');
-    $result= $mysqli ->query("select * from faculties");
+    $mysqli=new MySQLi('localhost','root','','work3');
+    $result= $mysqli ->query("select * from levels");
 ?>
             <select id= "faculty_id"name="faculty_id">
-            
                 <?php 
                 while ($rows=$result->fetch_assoc())
                 {
@@ -280,20 +271,16 @@ foreach ($model->users2 as $user)
                <div class="divTableCell"> 
         <input type="varchar" maxlength="30" id="user_type_id" placeholder="Edit you name " name="user_type_id" required value="<?php echo $usertype_name ?>" disabled> 
     </div>
-    
-    
-    
 
-    <div class="divTableCell"> <button type="submit" class="btn btn-default">Confirm Edit?</button> </div>
-    
+    <div class="divTableCell"> <button type="submit" class="btn btn-default">Confirm Edit?</button> 
+    </div>
 </div>
 </div>
 </div>
 <input type="text" name="id" value="<?php echo $studentID; ?>" hidden>
 </form>
     
-                                                    <!-- Footer -->
-        <?php require_once("Footer.php") ?>
+<!-- Footer -->
+<?php require_once("Footer.php") ?>
 </body>
-       
 </html> 

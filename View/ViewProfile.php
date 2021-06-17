@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-<title> My Profile </title>
-<?php 
+    <title>C.Essa Table Tennis</title>
+    <?php 
     session_start();
     require_once("navbar.php") 
-?>   
-    
-        <?php
+    ?>
+<?php
   define('__ROOT__', "../");
   require_once(__ROOT__ . "Model/FacultyModel.php");
   require_once(__ROOT__ . "Model/UserTypesModel.php");
@@ -43,17 +42,12 @@ foreach ($model->users2 as $user)
         $faculty_name=$faculty->faculty;
         $usertype= new UserTypesModel($studentUserTypeId);
         $usertype_name=$usertype->type;
-        
     }
 }
-
 ?>
     
-    
-    
-                                                <!-- Style -->
-<style>
-    
+<!-- Style -->
+<style> 
   #hero {
     background: url('images/all-icon/MyProfile.png') center center no-repeat;
     background-size: cover;
@@ -116,9 +110,6 @@ foreach ($model->users2 as $user)
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -179,7 +170,8 @@ foreach ($model->users2 as $user)
 }
     
 </style>
-                                                <!-- Header -->
+    
+<!-- Header -->
 <header>
             <div class="flex container">
                 <a id="logo" href="#"> My Personal Profile </a>
@@ -196,13 +188,13 @@ foreach ($model->users2 as $user)
                         
                         <li style="text-align: left"><a href="editProfile.php?id=<?php echo $_SESSION["id"];?>" > Edit My Profile </a></li> 
 
-                        <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
-                        
+                        <li style="text-align: left"><a href="logout.php"> Logout </a></li>
                     </ul>
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+    
+<!-- Body -->
 <body>
     
     <div id="header-hero-container">
@@ -211,38 +203,27 @@ foreach ($model->users2 as $user)
       <div class="fade"></div>
       <div class="hero-text">
           
-          <!-- F el noss -->
-
-          
+<!-- F el noss -->
        </div>
       </section>
   </div>
-    
-    
     	<div class="details-price">
                <div class="col-md-4">
                    <img src='images/Students/<?php echo $studentImage ?>' id='disp_img' height="350px" width="350px" mar>
-                   
         </div>
         
 		    <div class="details-price">
-            
-            <h1> <label > Student Name: </label> <?php echo $studentName ?> </h1>
-              
+            <h1> <label > UserName: </label> <?php echo $studentName ?> </h1>
             </div>    
                 
             <div class="row details">
-            
             <h1> <label > Created At: </label> <?php echo $studentCreatedAt ?> </h1>
             </div>
-            
-            
             <div class="row details">
-            
                 <?php 
-                    $mysqli=new MySQLi('localhost','root','','work2');
-                    $result= $mysqli ->query("select * from faculties");
-?>
+                    $mysqli=new MySQLi('localhost','root','','work3');
+                    $result= $mysqli ->query("select * from levels");
+                    ?>
             
                 <?php 
                 while ($rows=$result->fetch_assoc())
@@ -252,13 +233,13 @@ foreach ($model->users2 as $user)
                 }
             ?>
                 
-            <h1> <label > Faculty: </label> <?php echo $faculty_name ?> </h1>
+            <h1> <label > Level: </label> <?php echo $faculty_name ?> </h1>
             </div>
             
             <div class="row details">
             
                 <?php 
-                    $mysqli=new MySQLi('localhost','root','','work2');
+                    $mysqli=new MySQLi('localhost','root','','work3');
                     $result= $mysqli ->query("select * from usertypes");
 ?>          
                 <?php 
@@ -271,11 +252,9 @@ foreach ($model->users2 as $user)
                 
             <h1> <label > Type: </label> <?php echo $usertype_name ?> </h1>
             </div>
-                
-            
+     </div>          
     
-                                                    <!-- Footer -->
-        <?php require_once("Footer.php") ?>
+ <!-- Footer -->
+ <?php require_once("Footer.php") ?> 
 </body>
-       
 </html> 

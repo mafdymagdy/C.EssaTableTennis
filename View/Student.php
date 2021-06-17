@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
 <title>C.Essa Table Tennis</title>
 <?php 
     session_start();
@@ -141,7 +140,6 @@
                 <a id="logo" href="#">Trainee </a>
                 <nav>
                     
-                    
                     <ul id="nav-menu"><br>
                         <div style = "position: fixed; right: 100px; top:30px;">
                         <li><a href="AllCourses.php"> Products </a></li>
@@ -149,27 +147,23 @@
                         <li><a href="suggest.php"> Product Inquiry </a></li>
                         <li><a href="WriteQuestion.php"> Write Question </a></li>
                         <li><a href="AllQuestions.php"> All Questions </a></li>
-                        <li><a href="MessageHistory.php?id=<?php echo $_SESSION["id"];?>" > Messages History </a></li> 
+                        <li><a href="MessageHistory.php?id=<?php echo $_SESSION["id"];?>"> Messages History </a></li> 
                         <li><a href="MyCart.php?id=<?php echo $_SESSION["id"];?>" > My Cart </a></li>
                         <li><a href="ViewProfile.php?id=<?php echo $_SESSION["id"];?>" > MyProfile </a></li> 
-                        
                         <li><a href="logout.php"> Logout </a></li> 
-                        
                         </div>
-                
                     </ul>
                 </nav>
             </div>
-    
     </header>    
-                                                <!-- Body -->
+    
+<!-- Body -->
 <body>
     <div id="header-hero-container">
         <div class="page-header">
         <h4> Welcome Trainee <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> to C.EssaTableTennis Website.</h4>
     </div>
     <div id="header-hero-container">
-        
   <section id="hero">
       <div class="fade"></div>
       <div class="hero-text">
@@ -182,6 +176,6 @@
 </div>
     
 <!-- Footer -->
-        <?php require_once("Footer.php") ?>
+<?php require_once("Footer.php") ?>
 </body>      
 </html> 

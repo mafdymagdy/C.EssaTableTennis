@@ -40,7 +40,6 @@ function fillArray()
     return $this->type = $type;
   }
   
-
   function getID() {
     return $this->id;
   }
@@ -71,10 +70,9 @@ function fillArray()
     {
         $row = $dbh->fetchRow();
         $this->id = $row["id"];
-        $this->type = $row["type"];
-    
-        
+        $this->type = $row["type"];        
     }
+        
     else 
     {
         $this->type = "";

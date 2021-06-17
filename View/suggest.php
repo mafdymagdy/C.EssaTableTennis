@@ -7,7 +7,7 @@
     require_once("navbar.php") 
 ?>
 
-    <?php
+  <?php
   define('__ROOT__', "../");
   require_once(__ROOT__ . "Model/ContactsModel.php");
   require_once(__ROOT__ . "Controller/ContactController.php");
@@ -22,7 +22,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 
 ?>
     
-        <?php
+<?php
 $id = $_SESSION["id"];
 foreach ($model->contacts as $c)
 {
@@ -35,18 +35,17 @@ foreach ($model->contacts as $c)
 
 ?>
     
-    
-                                                    <!-- CSS -->
-    <head>
+    <!-- CSS -->
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://localhost/work2/lib/css/mycss.css"> 
+  <link rel="stylesheet" href="http://localhost/work3/lib/css/mycss.css"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
 </head>
     
-                                                <!-- Style -->
+<!-- Style -->
 <style>
     
   #hero {
@@ -243,10 +242,11 @@ foreach ($model->contacts as $c)
 }
     
 </style>
-                                                <!-- Header -->
+    
+<!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#"> Product Inquiry</a>
+                <a id="logo" href="#">Product Inquiry</a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -273,57 +273,52 @@ foreach ($model->contacts as $c)
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+    
+<!-- Body -->
 <body>
     
     <div id="header-hero-container">
-
   <section id="hero">
       <div class="fade"></div>
       <div class="hero-text">
           
-          <!-- F el noss -->
-
-          
+<!-- F el noss -->
        </div>
       </section>
   </div>
-                                                <!-- Table form -->
     
-    <form  method = "post" action="suggest.php?action=insertCourseSuggestion">
+<!-- Table form -->
+<form  method = "post" action="suggest.php?action=insertCourseSuggestion">
 <div class="container jumbotron text-left">
 <div class="divTable paleBlueRows">
 <div class="divTableHeading">
 <div class="divTableRow">
-    <div class="divTableHead">Course Image</div>
-    <div class="divTableHead">Course Name</div>
-    <div class="divTableHead">Course Faculty</div>
-    <div class="divTableHead">Message about the course</div>
+    <div class="divTableHead">Product Image</div>
+    <div class="divTableHead">Product Name</div>
+    <div class="divTableHead">Level</div>
+    <div class="divTableHead">Your Inquiry</div>
 </div>
 </div>
 <div class="divTableBody">
 
-
 <div class="divTableRow">
-    
     <div class="divTableCell"> 
-        <label>Add Course Image </label>
         <img src='images/Courses/<?php echo $courseImage ?>' id='disp_img' height="100px" width="100px">
+        <br>
+        <label>Product Image </label>
         <input type="file"  id="course_img"  name="course_img" onchange="change_img(this)" required>
     </div>
-    
     <div class="divTableCell"> 
-    <input type="varchar" maxlength="250" id="suggested_course_name" placeholder="Course Name" name="suggested_course_name" required>
+    <input type="varchar" maxlength="250" id="Product Name" placeholder="Product Name" name="Product Name" required>
     </div>
     
             <div class="divTableCell"> 
         <!--input type="text"  id="colorid" placeholder="Enter Color" name="colorid"  -->
             <?php 
-    $mysqli=new MySQLi('localhost','root','','work2');
-    $result= $mysqli ->query("select * from faculties");
+    $mysqli=new MySQLi('localhost','root','','work3');
+    $result= $mysqli ->query("select * from levels");
 ?>
             <select id= "course_faculty_id"name="course_faculty_id">
-            
                 <?php 
                 while ($rows=$result->fetch_assoc())
                 {
@@ -336,7 +331,7 @@ foreach ($model->contacts as $c)
     </div>
     
         <div class="divTableCell"> 
-    <input type="varchar" maxlength="250" id="student_message" placeholder="Student Message" name="student_message" required>
+    <input type="varchar" maxlength="250" id="Type Your Message Here...." placeholder="Type Your Message Here...." name="Type Your Message Here...." required>
     </div>
     
         <div class="divTableCell"> 
@@ -344,7 +339,7 @@ foreach ($model->contacts as $c)
     </div>
     
     
-    <div class="divTableCell"> <button type="submit" class="btn btn-default"> Send Suggestion</button> </div>
+    <div class="divTableCell"> <button type="submit" class="btn btn-default"> Send Inquiry</button> </div>
 
 </div>
       
@@ -353,7 +348,7 @@ foreach ($model->contacts as $c)
     </div>
 </form>  
     
-                                                    <!-- Footer -->
+<!-- Footer -->
         <?php require_once("Footer.php") ?>
 </body>
        
