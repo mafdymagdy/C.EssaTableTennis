@@ -164,7 +164,7 @@
 <body>
     <div id="header-hero-container">
         <div class="page-header">
-        <h4> Welcome Trainee <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> to MIU site.</h4>
+        <h4> Welcome Trainee <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> to C.EssaTableTennis Website.</h4>
     </div>
     <div id="header-hero-container">
         
