@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-    
-<title> Student </title>
+<title>C.Essa Table Tennis</title>
+  <?php require_once("navbar.php")?>
+
 <?php 
     session_start();
     require_once("navbar.php") 
 ?>
 
-                                                <!-- Style -->
+<!-- Style -->
 <style>
     
   #hero {
-    background: url('images/about/miu.jpg') center center no-repeat;
+    background: url('images/about/Table Tennis.jpg') center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -68,12 +69,10 @@
   border: none;
 }
 
-.openbtn:hover {
+.openbtn:hover 
+{
   background-color: #FFA500;
 }	
-
-
-
 
 /* Fixed sidenav, full height */
 .sidenav {
@@ -135,10 +134,10 @@
 }
     
 </style>
-                                                <!-- Header -->
+ <!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STUDENT </a>
+                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Trainee </a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -147,7 +146,6 @@
                     </button>
                     
                     <ul id="nav-menu">
-                        
                         <li style="text-align: left"><a href="SearchCourses.php"> Search Courses </a></li>
                         <li style="text-align: left"><a href="ViewProfile.php?id=<?php echo $_SESSION["id"];?>" > Profile </a></li>
                         <li style="text-align: left"><a href="WriteQuestion.php"> Write Question </a></li>
@@ -157,19 +155,16 @@
                         <li style="text-align: left"><a href="MyCart.php?id=<?php echo $_SESSION["id"];?>" > My Cart </a></li>
                         <li style="text-align: left"><a href="AllCourses.php"> Courses </a></li>
                         <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
-                        
-                        
-
                     </ul>
                 </nav>
             </div>
     
     </header>    
-                                                <!-- Body -->
+ <!-- Body -->
 <body>
     <div id="header-hero-container">
         <div class="page-header">
-        <h4> Welcome Student <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> to MIU site.</h4>
+        <h4> Welcome Trainee <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> to MIU site.</h4>
     </div>
     <div id="header-hero-container">
         
@@ -183,8 +178,7 @@
       </section>
   </div>
     
-                                                    <!-- Footer -->
+<!-- Footer -->
         <?php require_once("Footer.php") ?>
 </body>
-       
 </html> 
