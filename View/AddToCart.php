@@ -52,7 +52,7 @@ foreach ($model->courses as $course)
 <style>
     
   #hero {
-    background: url('images/about/about-1.jpg') center center no-repeat;
+    background: url('images/about/TableTennisTableee.jpg') center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -179,7 +179,7 @@ foreach ($model->courses as $course)
                                                 <!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Confirm add to cart </a>
+                <a id="logo" href="#"> Confirm add to cart </a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -188,12 +188,15 @@ foreach ($model->courses as $course)
                     </button>
                     
                     <ul id="nav-menu"> 
-                        <li style="text-align: right"><a href="Student.php"><img src="images/miu-logo.jpg" alt="Logo" style="width:50px;height:50px;"></a></li>
+                        
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 60px; top:45px;">
+                        <li><a href="Student.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:10px;"></a></li>
+                        <li><i class="fa fa-home"></i> <a href="Student.php" style = "text-decoration: none;">Home</a></li>
 
-                        <li style="text-align: left"><a href="AllCourses.php"> Courses </a></li>
-                        <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
+                        <li><a href="AllCourses.php"> Product </a></li>
+                        <li><a href="logout.php"> Logout </a></li> 
                         
-                        
+                        </div>
 
                     </ul>
                 </nav>
@@ -214,16 +217,15 @@ foreach ($model->courses as $course)
       </section>
   </div>
     
-                                                <!-- Table form -->
-  
+<!-- Table form -->
     <form  method = "post" action="AddToCart.php?action=insertcart">
 <div class="container jumbotron text-center">
 <div class="divTable paleBlueRows">
 <div class="divTableHeading">
 <div class="divTableRow">
-    <div class="divTableHead">Student Name</div>
-    <div class="divTableHead">Course Name</div>
-    <div class="divTableHead">Course Price</div>
+    <div class="divTableHead">Trainee Name</div>
+    <div class="divTableHead">Product Name</div>
+    <div class="divTableHead">Product Price</div>
 </div>
 </div>
 <div class="divTableRow">
@@ -232,7 +234,6 @@ foreach ($model->courses as $course)
         <input type="varchar" maxlength="30" id="user_name"  name="user_name"  value="<?php echo $_SESSION["username"]; ?>"> 
     </div>
 
-    
     <div class="divTableCell"> 
         <input type="varchar" maxlength="30" id="course_name"  name="course_name" value="<?php echo $courseName ?>"> 
     </div>
@@ -248,16 +249,14 @@ foreach ($model->courses as $course)
         <div class="divTableCell"> 
     <input type="id" hidden required id="course_id" name="course_id" value="<?php echo $courseID ?>">
     </div>
-    
 
     <div class="divTableCell"> <button type="submit" class="btn btn-default">Confirm Add To Cart?</button> </div>
-    
 </div>
 </div>
 </div>
 </form>
     
-                                                    <!-- Footer -->
+<!-- Footer -->
         <?php require_once("Footer.php") ?>
 </body>
        

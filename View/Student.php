@@ -141,13 +141,10 @@
                 <nav>
                     
                     <ul id="nav-menu"><br>
-                        <div style = "position: fixed; right: 100px; top:30px;">
+                        <div style = "position: fixed; right: 400px; top:30px;">
                         <li><a href="AllCourses.php"> Products </a></li>
-                        <li><a href="SearchCourses.php"> Search Products </a></li>
-                        <li><a href="suggest.php"> Product Inquiry </a></li>
                         <li><a href="WriteQuestion.php"> Write Question </a></li>
-                        <li><a href="AllQuestions.php"> All Questions </a></li>
-                        <li><a href="MessageHistory.php?id=<?php echo $_SESSION["id"];?>"> Messages History </a></li> 
+                        <li><a href="AllQuestions.php"> Message history </a></li>
                         <li><a href="MyCart.php?id=<?php echo $_SESSION["id"];?>" > My Cart </a></li>
                         <li><a href="ViewProfile.php?id=<?php echo $_SESSION["id"];?>" > MyProfile </a></li> 
                         <li><a href="logout.php"> Logout </a></li> 

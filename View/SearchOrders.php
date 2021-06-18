@@ -10,11 +10,9 @@
 
 <title>Search Orders</title>
 <?php require_once("navbar.php") ?>
-    
 
-                                                <!-- Style -->
+<!-- Style -->
 <style>
-    
   #hero {
     background: url('images/about/solid.jpg') center center no-repeat;
     background-size: cover;
@@ -77,9 +75,6 @@
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -140,7 +135,8 @@
 }
     
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
                 
@@ -152,29 +148,19 @@
                     </button>
                     
                     <ul id="nav-menu"> 
-                        
                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 100px; top:30px;">
                         
                         <li><a href="Admin.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:20px; top:7px;"></a></li>
                         
-                        
                         <li><i class="fa fa-home"></i> <a href="Admin.php" style = "text-decoration: none;">Home</a></li>
                         
                         <li><a href="Courses.php"> A/E/D Product </a></li>
-                        
-                                   
-                        
-                        <li><a href="RespondMessage.php"> Respond Messages </a></li>
-            
-                        
-                        <li ><a href="RespondQuestions.php"> Respond Questions from Traniee </a></li>
+
+                        <li ><a href="RespondQuestions.php"> Message History </a></li>
                         
                         <li><a href="AddAdmin.php"> Add Admins </a></li>
-                        
                         <li><a href="AllAdmins.php"> Delete Admins </a></li>
-                        
                         <li><a href="Allprofiles.php"> All Traniee Profiles </a></li>
-                        
                         <li ><a href="logout.php"> Logout </a></li> 
                         </div>
                     </ul>
@@ -182,7 +168,8 @@
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
     
     <div id="header-hero-container">
@@ -193,7 +180,6 @@
           
           <!-- F el noss -->
           <h1> Live Search about any order Down </h1>
-          
        </div>
       </section>
   </div>
@@ -206,7 +192,7 @@
 			<div class="form-group">
 				<div class="input-group">
 					<span class="input-group-addon">Search</span>
-					<input type="text" name="search_text" id="search_text" placeholder="Search by Student Name and Course Name and Course Price " class="form-control" />
+					<input type="text" name="search_text" id="search_text" placeholder="Search by Trainee Name or Course Name or Course Price " class="form-control" />
 				</div>
 			</div>
 			<br />
@@ -214,15 +200,12 @@
 		</div>
 		<div style="clear:both"></div>
 		<br />
-		
 		<br />
 		<br />
 		<br />
     
-    
-                                                    <!-- Footer -->
-<?php require_once("Footer.php") ?>
-    
+<!-- Footer -->
+<?php require_once("Footer.php") ?>   
     
 <script>
 $(document).ready(function(){
@@ -253,7 +236,5 @@ $(document).ready(function(){
 	});
 });
 </script>
-    
 </body>
-       
 </html> 

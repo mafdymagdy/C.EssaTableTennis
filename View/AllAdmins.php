@@ -183,10 +183,8 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                         
                         <li ><a href="SearchOrders.php"> Search Orders </a></li>            
                         
-                        <li><a href="RespondMessage.php"> Respond Messages </a></li>
-            
                         
-                        <li ><a href="RespondQuestions.php"> Respond Questions from Traniee </a></li>
+                        <li ><a href="RespondQuestions.php"> Message History</a></li>
                         
                         <li><a href="AddAdmin.php"> Add Admins </a></li>
                     

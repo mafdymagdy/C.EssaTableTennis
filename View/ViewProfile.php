@@ -183,12 +183,18 @@ foreach ($model->users2 as $user)
                     </button>
                     
                     <ul id="nav-menu"> 
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 60px; top:45px;">
                         <li><a href="Student.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:7px;"></a></li>
                         <li><i class="fa fa-home"></i> <a href="Student.php" style = "text-decoration: none;">Home</a></li>
+                        
+                        <li><a href="AllCourses.php"> Products </a></li>
+                        <li><a href="WriteQuestion.php"> Write Question </a></li>
+                        <li><a href="AllQuestions.php"> Message History </a>
                         
                         <li style="text-align: left"><a href="editProfile.php?id=<?php echo $_SESSION["id"];?>" > Edit My Profile </a></li> 
 
                         <li style="text-align: left"><a href="logout.php"> Logout </a></li>
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -209,7 +215,7 @@ foreach ($model->users2 as $user)
   </div>
     	<div class="details-price">
                <div class="col-md-4">
-                   <img src='images/Students/<?php echo $studentImage ?>' id='disp_img' height="350px" width="350px" mar>
+                   <img src='images/Trainees/<?php echo $studentImage ?>' id='disp_img' height="350px" width="350px" mar>
         </div>
         
 		    <div class="details-price">

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
-<title> Edit Course </title>
+    <title>C.Essa Table Tennis</title>
 <?php require_once("navbar.php") ?>
     
     <?php
@@ -36,7 +35,7 @@ foreach ($model->courses as $course)
 
 ?>
     
-                                                <!-- CSS -->
+ <!-- CSS -->
     <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,11 +45,11 @@ foreach ($model->courses as $course)
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
 </head>
     
-                                                <!-- Style -->
+ <!-- Style -->
 <style>
     
   #hero {
-    background: url('images/about/about-1.jpg') center center no-repeat;
+    background: url('images/about/TableTennisTablee.jpg') center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -110,9 +109,6 @@ foreach ($model->courses as $course)
 .openbtn:hover {
   background-color: #FFA500;
 }	
-
-
-
 
 /* Fixed sidenav, full height */
 .sidenav {
@@ -174,10 +170,11 @@ foreach ($model->courses as $course)
 }
     
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
-            <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Edit Course </a>
+            <div class="flex container" style = "position:absolute; left:100px; top:20px">
+                <a id="logo" href="#"> Edit Course </a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -186,16 +183,20 @@ foreach ($model->courses as $course)
                     </button>
                     
                     <ul id="nav-menu"> 
-                        <li style="text-align: right"><a href="Admin.php"><img src="images/miu-logo.jpg" alt="Logo" style="width:50px;height:50px;"></a></li>
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div style = "position: fixed; right: 40px; top:30px;">
                         
-                        <li style="text-align: left"><a href="Courses.php"> Courses </a></li>
-                        <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
-
+                        <li><a href="Admin.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:20px; top:10px;"></a></li>
+                        
+                        <li><a href="Courses.php"> Courses </a></li>
+                        <li><a href="logout.php"> Logout </a></li> 
+                        </div>
                     </ul>
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
     
     <div id="header-hero-container">
@@ -210,8 +211,7 @@ foreach ($model->courses as $course)
       </section>
   </div>
     
-                                                <!-- Table form -->
-  
+<!-- Table form -->  
     <form  method = "post" action="Courses.php?action=edit">
 <div class="container jumbotron text-center">
 <div class="divTable paleBlueRows">
@@ -269,8 +269,7 @@ foreach ($model->courses as $course)
 <input type="text" name="id" value="<?php echo $courseID; ?>" hidden>
 </form>
     
-                                                    <!-- Footer -->
+<!-- Footer -->
         <?php require_once("Footer.php") ?>
-</body>
-       
+</body> 
 </html> 

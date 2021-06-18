@@ -185,8 +185,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                         
                         <li ><a href="SearchOrders.php"> Search Orders </a></li>            
                         
-                        <li><a href="RespondMessage.php"> Respond Messages </a></li>
-                        
                         <li><a href="AddAdmin.php"> Add Admins </a></li>
                         
                         <li><a href="AllAdmins.php"> Delete Admins </a></li>
@@ -215,15 +213,15 @@ if (isset($_GET['action']) && !empty($_GET['action']))
        </div>
       </section>
   </div>
-                                                <!-- Table Form -->
- 
+    
+<!-- Table Form -->
 <form  method = "post">
 <div class="container jumbotron text-left">
 <div class="divTable paleBlueRows">
 <div class="divTableHeading">
 <div class="divTableRow">
-    <div class="divTableHead">Student Name</div>
-    <div class="divTableHead">Student Question</div>
+    <div class="divTableHead">Trainee Name</div>
+    <div class="divTableHead">Trainee Question</div>
     <div class="divTableHead">Admin Answer</div>
     <div class="divTableHead">Respond</div>
 </div>
@@ -241,8 +239,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
     </div>
 </form> 
     
-                                                    <!-- Footer -->
+<!-- Footer -->
         <?php require_once("Footer.php") ?>
-</body>
-       
+</body>  
 </html> 

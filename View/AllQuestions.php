@@ -164,7 +164,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                                                 <!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#"> All Questions </a>
+                <a id="logo" href="#">Message History</a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -177,10 +177,10 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 60px; top:45px;">
                         <li><a href="Student.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:20px;"></a></li>
                         <li><i class="fa fa-home"></i> <a href="Student.php" style = "text-decoration: none;">Home</a></li>
-                        <li><a href="SearchCourses.php"> Search Products </a></li>
+                        
+                        <li><a href="AllCourses.php"> Products </a></li>
                         
                         <li><a href="WriteQuestion.php"> Write Question </a></li>
-                        <li><a href="MessageHistory.php?id=<?php echo $_SESSION["id"];?>" > Messages History </a></li>
                         <li><a href="MyCart.php?id=<?php echo $_SESSION["id"];?>" > My Cart </a></li>
                         <li><a href="ViewProfile.php?id=<?php echo $_SESSION["id"];?>" > MyProfile </a></li> 
                         
@@ -211,7 +211,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 <div class="divTable paleBlueRows">
 <div class="divTableHeading">
 <div class="divTableRow">
-    <div class="divTableHead">Student Name</div>
+    <div class="divTableHead">Traniee</div>
     <div class="divTableHead">Question</div>
 </div>
 </div>

@@ -204,7 +204,8 @@ foreach ($model->users2 as $user)
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
     
     <div id="header-hero-container">
@@ -233,7 +234,7 @@ foreach ($model->users2 as $user)
 </div>
 <div class="divTableRow">
     <div class="divTableCell"> 
-        <img src='images/Students/<?php echo $studentImage ?>' id='disp_img' height="100px" width="100px">
+        <img src='images/Trainees/<?php echo $studentImage ?>' id='disp_img' height="100px" width="100px">
         <br>
         <label>Edit Image:</label>
         <input type="file"  id="img"  name="img" onchange="change_img(this)" required>

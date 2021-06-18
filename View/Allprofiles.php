@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
-<title> Student Profiles </title>
+    <title>C.Essa Table Tennis</title>
 <?php require_once("navbar.php") ?>
     
     <?php
@@ -21,7 +20,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 
 ?>
     
-                                                <!-- CSS -->
+<!-- CSS -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,11 +30,10 @@ if (isset($_GET['action']) && !empty($_GET['action']))
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
 </head>
     
-                                                <!-- Style -->
-<style>
-    
+<!-- Style -->
+<style>  
   #hero {
-    background: url('images/all-icon/profiless.jpg.crdownload') center center no-repeat;
+    background: url('images/all-icon/Profiles.jpg') center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -95,9 +93,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 .openbtn:hover {
   background-color: #FFA500;
 }	
-
-
-
 
 /* Fixed sidenav, full height */
 .sidenav {
@@ -170,8 +165,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                         <span class="strip"></span>
                     </button>
                     
-                    <ul id="nav-menu"> 
-                        
+                    <ul id="nav-menu">                   
                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 150px; top:30px;">
                         
                         <li><a href="Admin.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:20px; top:7px;"></a></li>
@@ -184,10 +178,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                         
                         <li ><a href="SearchOrders.php"> Search Orders </a></li>            
                         
-                        <li><a href="RespondMessage.php"> Respond Messages </a></li>
-            
-                        
-                        <li ><a href="RespondQuestions.php"> Respond Questions from Traniee </a></li>
+                        <li ><a href="RespondQuestions.php"> Message History</a></li>
                         
                         <li><a href="AddAdmin.php"> Add Admins </a></li>
                         
@@ -199,9 +190,9 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
-    
     <div id="header-hero-container">
 
   <section id="hero">
@@ -209,14 +200,13 @@ if (isset($_GET['action']) && !empty($_GET['action']))
       <div class="hero-text">
           
           <!-- F el noss -->
-          <h2 style=" color: white">All Students Profiles </h2>
+          <h2 style=" color: white">All Trainees Profiles </h2>
           
        </div>
       </section>
   </div>
     
-                                                <!-- Table Form -->
-    
+<!-- Table Form -->    
     <form  method = "post" action="Courses.php?action=insert">
 <div class="container jumbotron text-left">
 <div class="divTable paleBlueRows">
@@ -224,7 +214,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 <div class="divTableRow">
     <div class="divTableHead"> Image </div>
     <div class="divTableHead"> Student Name </div>
-    <div class="divTableHead"> Faculty </div>
+    <div class="divTableHead"> Level </div>
     <div class="divTableHead"> Type </div>
     <div class="divTableHead"> Created At </div>
 </div>
@@ -242,8 +232,8 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 </div>
     </div>
 </form>      
-                                                    <!-- Footer -->
+
+<!-- Footer -->
         <?php require_once("Footer.php") ?>
-</body>
-       
+</body>   
 </html> 

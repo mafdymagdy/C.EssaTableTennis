@@ -36,7 +36,8 @@ foreach ($model->courses as $course)
 }
 
 ?>
-                                                <!-- CSS -->
+
+    <!-- CSS -->
     <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,11 +46,11 @@ foreach ($model->courses as $course)
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
 </head>
-                                                <!-- Style -->
-<style>
-    
+
+<!-- Style -->
+<style>    
   #hero {
-    background: url('images/about/about-1.jpg') center center no-repeat;
+    background: url('images/about/TableTennisTablee') center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -175,8 +176,8 @@ foreach ($model->courses as $course)
 </style>
                                                 <!-- Header -->
 <header>
-            <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Delete Course </a>
+            <div class="flex container"  style = "position:absolute; left:80px; top:20px">
+                <a id="logo" href="#"> Delete Product </a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -185,11 +186,14 @@ foreach ($model->courses as $course)
                     </button>
                     
                     <ul id="nav-menu"> 
-                        <li style="text-align: right"><a href="Admin.php"><img src="images/miu-logo.jpg" alt="Logo" style="width:50px;height:50px;"></a></li>
                         
-                        <li style="text-align: left"><a href="Courses.php"> Courses </a></li>
-                        <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
-
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 150px; top:30px;">
+                        
+                        <li><a href="Admin.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:20px; top:7px;"></a></li>
+                        
+                        <li><a href="Courses.php"> Courses </a></li>
+                        <li ><a href="logout.php"> Logout </a></li> 
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -216,8 +220,8 @@ foreach ($model->courses as $course)
 <div class="divTable paleBlueRows">
 <div class="divTableHeading">
 <div class="divTableRow">
-    <div class="divTableHead">Course Name</div>
-    <div class="divTableHead">Course Price</div>
+    <div class="divTableHead">Product Name</div>
+    <div class="divTableHead">Product Price</div>
     <div class="divTableHead">Delete</div>
 </div>
 </div>

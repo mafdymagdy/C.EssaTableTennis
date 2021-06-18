@@ -147,30 +147,21 @@
                     
                     <ul id="nav-menu"> 
                         
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 70px; top:30px;">
-                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 200px; top:30px;">
                         <li><a href="Courses.php"> A/E/D Product </a></li>
-                        
                         <li ><a href="SearchOrders.php"> Search Orders </a></li>            
-                        
-                        <li><a href="RespondMessage.php"> Respond Messages </a></li>
-            
-                        
-                        <li ><a href="RespondQuestions.php"> Respond Questions from Traniee </a></li>
-                        
+                        <li ><a href="RespondQuestions.php"> Message History </a></li>
                         <li><a href="AddAdmin.php"> Add Admins </a></li>
-                        
                         <li><a href="AllAdmins.php"> Delete Admins </a></li>
-                        
                         <li><a href="Allprofiles.php"> All Traniee Profiles </a></li>
-                        
                         <li ><a href="logout.php"> Logout </a></li> 
                         </div>
                     </ul>
                 </nav>
             </div>
     </header>    
-                                                <!-- Body -->
+                                                
+<!-- Body -->
 <body>
     <div id="header-hero-container">
         <div class="page-header">
@@ -186,9 +177,9 @@
        </div>
       </section>
   </div>
+</div> 
     
-                                                    <!-- Footer -->
-        <?php require_once("Footer.php") ?>
-</body>
-       
+<!-- Footer -->
+<?php require_once("Footer.php") ?>
+</body> 
 </html> 

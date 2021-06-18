@@ -258,11 +258,9 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
                         <li><a href="Courses.php"> A/E/D Product </a></li>
                         
                         <li ><a href="SearchOrders.php"> Search Orders </a></li>            
+                    
                         
-                        <li><a href="RespondMessage.php"> Respond Messages </a></li>
-            
-                        
-                        <li ><a href="RespondQuestions.php"> Respond Questions from Traniee </a></li>
+                        <li ><a href="RespondQuestions.php"> Message History </a></li>
                         
                         <li><a href="AllAdmins.php"> Delete Admins </a></li>
                         

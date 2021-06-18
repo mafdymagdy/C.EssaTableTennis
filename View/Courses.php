@@ -180,11 +180,9 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                         <li><i class="fa fa-home"></i> <a href="Admin.php" style = "text-decoration: none;">Home</a></li>
                         
                         <li ><a href="SearchOrders.php"> Search Orders </a></li>            
-                        
-                        <li><a href="RespondMessage.php"> Respond Messages </a></li>
             
                         
-                        <li ><a href="RespondQuestions.php"> Respond Questions from students </a></li>
+                        <li ><a href="RespondQuestions.php"> Message History </a></li>
                         
                         <li><a href="AddAdmin.php"> Add Admins </a></li>
                         
@@ -222,8 +220,8 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 <div class="divTableRow">
     <div class="divTableHead">Image</div>
     <div class="divTableHead">Faculty</div>
-    <div class="divTableHead">Course Name</div>
-    <div class="divTableHead">Course Price</div>
+    <div class="divTableHead">Product Name</div>
+    <div class="divTableHead">Product Price</div>
     <div class="divTableHead">Edit</div>
     <div class="divTableHead">Delete</div>
 </div>
