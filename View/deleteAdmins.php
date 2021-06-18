@@ -166,7 +166,7 @@ foreach ($model->users as $user)
                                                 <!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Delete Admin </a>
+                <a id="logo" href="#" style = "position:absolute; left:120px; top:15px"> Delete Admin </a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -175,11 +175,15 @@ foreach ($model->users as $user)
                     </button>
                     
                     <ul id="nav-menu"> 
-                        <li style="text-align: right"><a href="Admin.php"><img src="images/miu-logo.jpg" alt="Logo" style="width:50px;height:50px;"></a></li>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 100px; top:30px;">
+                        
+                        <li><a href="Admin.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:20px; top:5px;"></a></li>
+                        
+                        <li><i class="fa fa-home"></i> <a href="Admin.php" style = "text-decoration: none;">Home</a></li>
                         
                         <li style="text-align: left"><a href="AllAdmins.php"> Admins </a></li>
                         <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
-
+                        </div>
                     </ul>
                 </nav>
             </div>

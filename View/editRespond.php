@@ -178,7 +178,7 @@ foreach ($model->questions as $question)
                                                 <!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Respond specific question </a>
+                <a id="logo" href="#" style = "position:absolute; left:120px; top:20px"> Respond specific question </a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -187,11 +187,15 @@ foreach ($model->questions as $question)
                     </button>
                     
                     <ul id="nav-menu"> 
-                        <li style="text-align: right"><a href="Admin.php"><img src="images/miu-logo.jpg" alt="Logo" style="width:100px;height:100px;"></a></li>
                         
-                        <li style="text-align: left"><a href="RespondQuestions.php"> Questions </a></li>
-                        <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
-
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 100px; top:30px;">
+                        
+                        <li><a href="Admin.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:20px; top:7px;"></a></li>
+                        
+                        <li><i class="fa fa-home"></i> <a href="Admin.php" style = "text-decoration: none;">Home</a></li>
+                        <li><a href="RespondQuestions.php"> Questions </a></li>
+                        <li><a href="logout.php"> Logout </a></li> 
+                        </div>
                     </ul>
                 </nav>
             </div>

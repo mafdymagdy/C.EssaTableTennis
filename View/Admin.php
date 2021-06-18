@@ -10,7 +10,7 @@
 <style>
     
   #hero {
-    background: url('images/about/miu.jpg') center center no-repeat;
+    background: url('images/about/TableTennisTablee.jpg') center center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -137,7 +137,7 @@
                                                 <!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ADMIN </a>
+                <a id="logo" href="#" style = "position:absolute; left:80px; top:20px"> ADMIN </a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -147,15 +147,25 @@
                     
                     <ul id="nav-menu"> 
                         
-                        <li style="text-align: left"><a href="Courses.php"> A/E/D Courses </a></li> 
-                        <li style="text-align: left"><a href="AddAdmin.php"> Add Admins </a></li>
-                        <li style="text-align: left"><a href="AllAdmins.php"> Delete Admins </a></li>
-                        <li style="text-align: left"><a href="Allprofiles.php"> All Students Profiles </a></li>
-                        <li style="text-align: left"><a href="RespondMessage.php"> Respond Messages </a></li>
-                        <li style="text-align: left"><a href="SearchOrders.php"> Search Orders </a></li> 
-                        <li style="text-align: left"><a href="RespondQuestions.php"> Respond Questions from students </a></li> 
-                        <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
-
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 70px; top:30px;">
+                        
+                        <li><a href="Courses.php"> A/E/D Product </a></li>
+                        
+                        <li ><a href="SearchOrders.php"> Search Orders </a></li>            
+                        
+                        <li><a href="RespondMessage.php"> Respond Messages </a></li>
+            
+                        
+                        <li ><a href="RespondQuestions.php"> Respond Questions from Traniee </a></li>
+                        
+                        <li><a href="AddAdmin.php"> Add Admins </a></li>
+                        
+                        <li><a href="AllAdmins.php"> Delete Admins </a></li>
+                        
+                        <li><a href="Allprofiles.php"> All Traniee Profiles </a></li>
+                        
+                        <li ><a href="logout.php"> Logout </a></li> 
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -164,7 +174,7 @@
 <body>
     <div id="header-hero-container">
         <div class="page-header">
-        <h4> Welcome Admin <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> to MIU site.</h4>
+        <h4> Welcome Admin <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b> to C.EssaTableTennis Website.</h4>
     </div>
     <div id="header-hero-container">
         

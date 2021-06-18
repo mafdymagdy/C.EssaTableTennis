@@ -238,7 +238,7 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
                                                 <!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Add" <br> New Admin  </a>
+                
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -248,14 +248,28 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
                     
                    <ul id="nav-menu"> 
                         
-                        <li style="text-align: left"><a href="Courses.php"> A/E/D Courses </a></li> 
-                        <li style="text-align: left"><a href="AllAdmins.php"> Delete Admins </a></li>
-                        <li style="text-align: left"><a href="Allprofiles.php"> All Students Profiles </a></li>
-                        <li style="text-align: left"><a href="RespondMessage.php"> Respond Messages </a></li>
-                        <li style="text-align: left"><a href="SearchOrders.php"> Search Orders </a></li> 
-                        <li style="text-align: left"><a href="RespondQuestions.php"> Respond Questions from students </a></li> 
-                        <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
-
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 150px; top:30px;">
+                       
+                       <li><a href="Admin.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:20px; top:7px;"></a></li>
+                        
+                        
+                        <li><i class="fa fa-home"></i> <a href="Admin.php" style = "text-decoration: none;">Home</a></li>
+                        
+                        <li><a href="Courses.php"> A/E/D Product </a></li>
+                        
+                        <li ><a href="SearchOrders.php"> Search Orders </a></li>            
+                        
+                        <li><a href="RespondMessage.php"> Respond Messages </a></li>
+            
+                        
+                        <li ><a href="RespondQuestions.php"> Respond Questions from Traniee </a></li>
+                        
+                        <li><a href="AllAdmins.php"> Delete Admins </a></li>
+                        
+                        <li><a href="Allprofiles.php"> All Traniee Profiles </a></li>
+                        
+                        <li ><a href="logout.php"> Logout </a></li> 
+                        </div>
                     </ul>
                     
                 </nav>
@@ -270,7 +284,7 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
       <div class="fade"></div>
       <div class="hero-text">
           
-          <a href="Admin.php"><img src="images/miu-logo.jpg" alt="Logo" style="width:150px;height:150px;"></a>
+          <h2 style = "color: white;">Add new <br> Admin </h2>
           
        </div>
       </section>
@@ -280,7 +294,7 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
     
 	<section id="contact">
 			<div class="container">
-        <h2>Fill the form to add new Admin</h2>	
+        <h2 style ="color: red;">Fill the form to add new Admin</h2>	
 				<div class="flex">
 					<div id="form-container">
 					
@@ -310,7 +324,7 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
 				
 							<br>
 							
-							<button class="rounded"  >Save</button>
+							<button class="rounded" style ="background-color: red;"  >Save</button>
 						</form>
 					</div>
 					</div>

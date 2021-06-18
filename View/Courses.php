@@ -163,7 +163,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                                                 <!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "All Courses" <br> Add / Edit / Delete Courses </a>
+                <a id="logo" href="#" style = "position:absolute; left:100px; top:20px"> All Products </a>
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -173,14 +173,27 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                     
                     <ul id="nav-menu"> 
                         
-                        <li style="text-align: left"><a href="AddAdmin.php"> Add Admins </a></li>
-                        <li style="text-align: left"><a href="AllAdmins.php"> Delete Admins </a></li>
-                        <li style="text-align: left"><a href="Allprofiles.php"> All Students Profiles </a></li>
-                        <li style="text-align: left"><a href="RespondMessage.php"> Respond Messages </a></li>
-                        <li style="text-align: left"><a href="SearchOrders.php"> Search Orders </a></li> 
-                        <li style="text-align: left"><a href="RespondQuestions.php"> Respond Questions from students </a></li> 
-                        <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
-
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 40px; top:30px;">
+                        
+                        <li><a href="Admin.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:20px; top:10px;"></a></li>
+                        
+                        <li><i class="fa fa-home"></i> <a href="Admin.php" style = "text-decoration: none;">Home</a></li>
+                        
+                        <li ><a href="SearchOrders.php"> Search Orders </a></li>            
+                        
+                        <li><a href="RespondMessage.php"> Respond Messages </a></li>
+            
+                        
+                        <li ><a href="RespondQuestions.php"> Respond Questions from students </a></li>
+                        
+                        <li><a href="AddAdmin.php"> Add Admins </a></li>
+                        
+                        <li><a href="AllAdmins.php"> Delete Admins </a></li>
+                        
+                        <li><a href="Allprofiles.php"> All Traniee Profiles</a></li>
+                        
+                        <li ><a href="logout.php"> Logout </a></li> 
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -195,7 +208,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
       <div class="hero-text">
           
           <!-- F el noss -->
-          <a href="Admin.php"><img src="images/miu-logo.jpg" alt="Logo" style="width:150px;height:150px;"></a>
+          
        </div>
       </section>
   </div>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     
-<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
-	</head> 
+</head>
 
 <title>Search Orders</title>
 <?php require_once("navbar.php") ?>
@@ -143,7 +143,7 @@
                                                 <!-- Header -->
 <header>
             <div class="flex container">
-                <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Search Order </a>
+                
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -153,14 +153,30 @@
                     
                     <ul id="nav-menu"> 
                         
-                        <li style="text-align: left"><a href="Courses.php"> A/E/D Courses </a></li> 
-                        <li style="text-align: left"><a href="AddAdmin.php"> Add Admins </a></li>
-                        <li style="text-align: left"><a href="AllAdmins.php"> Delete Admins </a></li>
-                        <li style="text-align: left"><a href="Allprofiles.php"> All Students Profiles </a></li>
-                        <li style="text-align: left"><a href="RespondMessage.php"> Respond Messages </a></li>
-                        <li style="text-align: left"><a href="RespondQuestions.php"> Respond Questions from students </a></li> 
-                        <li style="text-align: left"><a href="logout.php"> Logout </a></li> 
-
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 100px; top:30px;">
+                        
+                        <li><a href="Admin.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:20px; top:7px;"></a></li>
+                        
+                        
+                        <li><i class="fa fa-home"></i> <a href="Admin.php" style = "text-decoration: none;">Home</a></li>
+                        
+                        <li><a href="Courses.php"> A/E/D Product </a></li>
+                        
+                                   
+                        
+                        <li><a href="RespondMessage.php"> Respond Messages </a></li>
+            
+                        
+                        <li ><a href="RespondQuestions.php"> Respond Questions from Traniee </a></li>
+                        
+                        <li><a href="AddAdmin.php"> Add Admins </a></li>
+                        
+                        <li><a href="AllAdmins.php"> Delete Admins </a></li>
+                        
+                        <li><a href="Allprofiles.php"> All Traniee Profiles </a></li>
+                        
+                        <li ><a href="logout.php"> Logout </a></li> 
+                        </div>
                     </ul>
                     
                 </nav>
@@ -176,7 +192,6 @@
       <div class="hero-text">
           
           <!-- F el noss -->
-          <a href="Admin.php"><img src="images/miu-logo.jpg" alt="Logo" style="width:150px;height:150px;"></a>
           <h1> Live Search about any order Down </h1>
           
        </div>
@@ -187,7 +202,7 @@
 			<br />
 			<br />
 			<br />
-			<h2 align="center">Search Now about any order </h2><br />
+			<h2 align="center" style="color:red;">Search Now about any order </h2><br />
 			<div class="form-group">
 				<div class="input-group">
 					<span class="input-group-addon">Search</span>
