@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
 <title> All Courses </title>
 <?php require_once("navbar.php") ?>
     
@@ -23,7 +22,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 
 ?>
     
-                                                <!-- CSS -->
+<!-- CSS -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,9 +31,9 @@ if (isset($_GET['action']) && !empty($_GET['action']))
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
 </head>
-                                                <!-- Style -->
+
+<!-- Style -->
 <style>
-    
   #hero {
     background: url('images/all-icon/course.jpg') center center no-repeat;
     background-size: cover;
@@ -97,9 +96,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -160,7 +156,8 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 }
     
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
                 <a id="logo" href="#" style = "position:absolute; left:100px; top:20px"> All Products </a>
@@ -180,8 +177,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                         <li><i class="fa fa-home"></i> <a href="Admin.php" style = "text-decoration: none;">Home</a></li>
                         
                         <li ><a href="SearchOrders.php"> Search Orders </a></li>            
-            
-                        
+
                         <li ><a href="RespondQuestions.php"> Message History </a></li>
                         
                         <li><a href="AddAdmin.php"> Add Admins </a></li>
@@ -196,23 +192,21 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
-    
     <div id="header-hero-container">
 
   <section id="hero">
       <div class="fade"></div>
       <div class="hero-text">
           
-          <!-- F el noss -->
-          
+<!-- F el noss -->  
        </div>
       </section>
   </div>
     
-                                                <!-- Table Form -->
-    
+ <!-- Table Form --> 
     <form  method = "post" action="Courses.php?action=insert">
 <div class="container jumbotron text-left">
 <div class="divTable paleBlueRows">
@@ -257,8 +251,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
             ?>
             </select>
     </div>
-
-
     
     <div class="divTableCell"> 
         <input type="varchar" maxlength="30" id="course_name" placeholder="Enter Course name" name="course_name" required> 
@@ -267,18 +259,14 @@ if (isset($_GET['action']) && !empty($_GET['action']))
     <div class="divTableCell"> 
     <input type="Number" min="0" max="20000" id="course_price" placeholder="Enter Course Price" name="course_price" required>
     </div>
-    
     <div class="divTableCell"> <button type="submit" class="btn btn-default">Add New Course</button> </div>
-
 </div>
-      
 </div>
 </div>
     </div>
 </form>  
     
-                                                    <!-- Footer -->
+<!-- Footer -->
         <?php require_once("Footer.php") ?>
-</body>
-       
+</body> 
 </html> 

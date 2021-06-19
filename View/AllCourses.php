@@ -181,11 +181,9 @@
   clear: both;
   display: table;
 }
-
-    
-
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
                 <a id="logo" href="#">All products  </a>
@@ -208,11 +206,10 @@
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
-<body>
-    
-    <div id="header-hero-container">
 
+<!-- Body -->
+<body>
+    <div id="header-hero-container">
   <section id="hero">
       <div class="fade"></div>
       <div class="hero-text">
@@ -236,7 +233,6 @@ for($j=0; $j<($no_of_rows); $j++)
   echo"<div class='row'>";
     for($j=0; $j<count($result); $j++)
     {
-        
         echo "<div class='column'><div class='card'>";
             echo "<img src='../View/images/Courses/".$result[$j]->img."' style='width:90%'>";
             echo "<div class='container'>";
@@ -253,7 +249,7 @@ for($j=0; $j<($no_of_rows); $j++)
     ?>
 
 </div>
-	
+
 	</section>
 <!-- Footer -->
         <?php require_once("Footer.php") ?>

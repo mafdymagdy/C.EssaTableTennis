@@ -18,7 +18,6 @@ if (isset($_GET['action']) && !empty($_GET['action'])) {
 }
 
 ?>
-    
     <?php
 $id = $_GET['id'];
 foreach ($model->courses as $course)
@@ -32,9 +31,8 @@ foreach ($model->courses as $course)
         $courseID = $course->getID();
     }
 }
-
 ?>
-    
+
  <!-- CSS -->
     <head>
   <meta charset="utf-8">
@@ -168,7 +166,6 @@ foreach ($model->courses as $course)
   float: right;
   padding-right: 8px;
 }
-    
 </style>
 
 <!-- Header -->
@@ -198,7 +195,6 @@ foreach ($model->courses as $course)
 
 <!-- Body -->
 <body>
-    
     <div id="header-hero-container">
 
   <section id="hero">
@@ -206,7 +202,6 @@ foreach ($model->courses as $course)
       <div class="hero-text">
           
           <!-- F el noss -->
-          
        </div>
       </section>
   </div>
@@ -259,10 +254,7 @@ foreach ($model->courses as $course)
     <div class="divTableCell"> 
     <input type="Number"  min="0" max="20000" required id="course_price" placeholder="Edit Course Price" name="course_price" value="<?php echo $coursePrice ?>">
     </div>
-    
-
     <div class="divTableCell"> <button type="submit" class="btn btn-default">Confirm Edit?</button> </div>
-    
 </div>
 </div>
 </div>

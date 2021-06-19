@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
 <title> Delete Admin </title>
 <?php require_once("navbar.php") ?>
     
@@ -19,7 +18,6 @@ if (isset($_GET['action']) && !empty($_GET['action'])) {
 }
 
 ?>
-
 <?php
 $id = $_GET['id'];
 foreach ($model->users as $user)
@@ -35,7 +33,7 @@ foreach ($model->users as $user)
 
 ?>
     
-                                                <!-- Style -->
+<!-- Style -->
 <style>
     
   #hero {
@@ -100,9 +98,6 @@ foreach ($model->users as $user)
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -163,7 +158,8 @@ foreach ($model->users as $user)
 }
     
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
                 <a id="logo" href="#" style = "position:absolute; left:120px; top:15px"> Delete Admin </a>
@@ -188,9 +184,9 @@ foreach ($model->users as $user)
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
-    
     <div id="header-hero-container">
 
   <section id="hero">
@@ -198,7 +194,7 @@ foreach ($model->users as $user)
       <div class="hero-text">
           
           <!-- F el noss -->
-                                                          <!-- Table Form -->
+<!-- Table Form -->
 <form  method = "post" action="AllAdmins.php?action=delete">
 <div class="container jumbotron text-center">
 <div class="divTable paleBlueRows">
@@ -230,9 +226,7 @@ foreach ($model->users as $user)
       </section>
   </div>
 
-    
-                                                    <!-- Footer -->
+    <!-- Footer -->
         <?php require_once("Footer.php") ?>
-</body>
-       
+</body>  
 </html> 

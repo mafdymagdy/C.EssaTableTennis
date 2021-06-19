@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
-    
 <title> Admin </title>
 <?php 
     session_start();
     require_once("navbar.php") 
 ?>  
-                                                <!-- Style -->
+
+<!-- Style -->
 <style>
-    
   #hero {
     background: url('images/about/TableTennisTablee.jpg') center center no-repeat;
     background-size: cover;
@@ -71,9 +70,6 @@
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -132,9 +128,9 @@
   float: right;
   padding-right: 8px;
 }
-    
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
                 <a id="logo" href="#" style = "position:absolute; left:80px; top:20px"> ADMIN </a>

@@ -21,7 +21,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 
 ?>
     
-                                                <!-- CSS -->
+<!-- CSS -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -96,9 +96,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -159,7 +156,8 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 }
     
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
                 
@@ -181,9 +179,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                         <li><a href="Courses.php"> A/E/D Product </a></li>
                         
                         <li ><a href="SearchOrders.php"> Search Orders </a></li>            
-                        
-            
-                        
+
                         <li ><a href="RespondQuestions.php"> Respond Questions from Traniee </a></li>
                         
                         <li><a href="AddAdmin.php"> Add Admins </a></li>
@@ -199,9 +195,9 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
-    
     <div id="header-hero-container">
 
   <section id="hero">
@@ -214,8 +210,8 @@ if (isset($_GET['action']) && !empty($_GET['action']))
        </div>
       </section>
   </div>
-                                                <!-- Table Form -->
- 
+
+<!-- Table Form -->
 <form  method = "post">
 <div class="container jumbotron text-left">
 <div class="divTable paleBlueRows">
@@ -237,15 +233,13 @@ if (isset($_GET['action']) && !empty($_GET['action']))
       echo $view->output();
 
 ?>
-    
-      
+
 </div>
 </div>
     </div>
 </form> 
     
-                                                    <!-- Footer -->
+   <!-- Footer -->
         <?php require_once("Footer.php") ?>
-</body>
-       
+</body>  
 </html> 

@@ -1,6 +1,7 @@
 <?php
 $connect = mysqli_connect("localhost", "root", "", "work3");
 $output = '';
+
 if(isset($_POST["query"]))
 {
 	$search = mysqli_real_escape_string($connect, $_POST["query"]);
@@ -9,10 +10,12 @@ if(isset($_POST["query"]))
 	WHERE course_name LIKE '%".$search."%' 
 	";
 }
+
 else
 {
 	$query = " SELECT * FROM courses ORDER BY id";
 }
+
 $result = mysqli_query($connect, $query);
 if(mysqli_num_rows($result) > 0)
 {
@@ -33,6 +36,7 @@ if(mysqli_num_rows($result) > 0)
 	}
 	echo $output;
 }
+
 else
 {
 	echo 'Data Not Found';

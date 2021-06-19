@@ -6,13 +6,10 @@
 require_once("navbar.php");
 require_once "config.php";
  
-
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
  
-
 if($_SERVER["REQUEST_METHOD"] == "POST"){
- 
     // Validate username
     if(empty(trim($_POST["username"]))){
         $username_err = "Please enter a username.";
@@ -40,8 +37,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }
-
-            
             mysqli_stmt_close($stmt);
         }
     }
@@ -70,17 +65,14 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
     // Check input errors before inserting in database
     if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
         
-       
         $sql = "INSERT INTO user (username, password,user_type_id) VALUES (?, ?,2)";
          
         if($stmt = mysqli_prepare($link, $sql)){
             
             mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
             
-            
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); 
-            
             
             if(mysqli_stmt_execute($stmt)){
               
@@ -89,12 +81,9 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
                 echo "Something went wrong. Please try again later.";
             }
 
-         
             mysqli_stmt_close($stmt);
         }
     }
-    
-  
     mysqli_close($link);
 }
 ?>
@@ -107,9 +96,9 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
 </head>
-                                                <!-- Style -->
+
+<!-- Style -->
 <style>
-    
   #hero {
     background: url('images/all-icon/admin.jpg') center center no-repeat;
     background-size: cover;
@@ -172,9 +161,6 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -232,10 +218,10 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
 .fa-caret-down {
   float: right;
   padding-right: 8px;
-}
-    
+}   
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
                 
@@ -252,14 +238,12 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
                        
                        <li><a href="Admin.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:20px; top:7px;"></a></li>
                         
-                        
                         <li><i class="fa fa-home"></i> <a href="Admin.php" style = "text-decoration: none;">Home</a></li>
                         
                         <li><a href="Courses.php"> A/E/D Product </a></li>
                         
                         <li ><a href="SearchOrders.php"> Search Orders </a></li>            
                     
-                        
                         <li ><a href="RespondQuestions.php"> Message History </a></li>
                         
                         <li><a href="AllAdmins.php"> Delete Admins </a></li>
@@ -269,13 +253,12 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
                         <li ><a href="logout.php"> Logout </a></li> 
                         </div>
                     </ul>
-                    
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
-    
     <div id="header-hero-container">
 
   <section id="hero">
@@ -288,8 +271,7 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
       </section>
   </div>
     
-                                                <!-- section Add Admin -->
-    
+ <!-- section Add Admin -->   
 	<section id="contact">
 			<div class="container">
         <h2 style ="color: red;">Fill the form to add new Admin</h2>	
@@ -297,7 +279,6 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
 					<div id="form-container">
 					
 					<!--	<h2> Create a new account </h2> -->
-					
 						 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 						 
 							<div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -305,9 +286,7 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
                 <input type="text" name="username" class="form-control" value="<?php echo $username; ?>" required>
                 <span class="help-block"><?php echo $username_err; ?></span>
                 </div>    
-							
-							
-	
+
 			   <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label>Password</label>
                 <input type="password" name="password" class="form-control" value="<?php echo $password; ?>" required>
@@ -319,9 +298,7 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
                 <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>"required>
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
                  </div>
-				
 							<br>
-							
 							<button class="rounded" style ="background-color: red;"  >Save</button>
 						</form>
 					</div>
@@ -329,9 +306,7 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
 				</div>
 		</section>	
 		
-   
-                                                    <!-- Footer -->
+ <!-- Footer -->
         <?php require_once("Footer.php") ?>
-</body>
-       
+</body>     
 </html> 

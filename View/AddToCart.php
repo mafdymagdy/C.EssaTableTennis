@@ -19,7 +19,6 @@
 if (isset($_GET['action']) && !empty($_GET['action'])) {
   $controller->{$_GET['action']}();
 }
-
 ?>
     
     <?php
@@ -48,9 +47,8 @@ foreach ($model->courses as $course)
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
 </head>
     
-                                                <!-- Style -->
+<!-- Style -->
 <style>
-    
   #hero {
     background: url('images/about/TableTennisTableee.jpg') center center no-repeat;
     background-size: cover;
@@ -113,9 +111,6 @@ foreach ($model->courses as $course)
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -173,10 +168,10 @@ foreach ($model->courses as $course)
 .fa-caret-down {
   float: right;
   padding-right: 8px;
-}
-    
+} 
 </style>
-                                                <!-- Header -->
+
+ <!-- Header -->
 <header>
             <div class="flex container">
                 <a id="logo" href="#"> Confirm add to cart </a>
@@ -202,9 +197,9 @@ foreach ($model->courses as $course)
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+ <!-- Body -->
 <body>
-    
     <div id="header-hero-container">
 
   <section id="hero">
@@ -212,7 +207,6 @@ foreach ($model->courses as $course)
       <div class="hero-text">
           
           <!-- F el noss -->
-          
        </div>
       </section>
   </div>
@@ -258,6 +252,5 @@ foreach ($model->courses as $course)
     
 <!-- Footer -->
         <?php require_once("Footer.php") ?>
-</body>
-       
+</body>   
 </html> 
