@@ -36,11 +36,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 mysqli_stmt_store_result($stmt);
                 
                 // Check if username exists, if yes then verify password
-                if(mysqli_stmt_num_rows($stmt) == 1){                    
+                if(mysqli_stmt_num_rows($stmt) == 1)
+                {                    
                    
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password,$user_type_id);
                     if(mysqli_stmt_fetch($stmt)){
-                        if(password_verify($password, $hashed_password)){
+                        if(password_verify($password, $hashed_password))
+                        {
                             // Password is correct, so start a new session
                             
                             session_start();
@@ -69,11 +71,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     
                     $username_err = "No account found with that username.";
                 }
-            } else{
+            } else
+            {
                 echo "Oops! Something went wrong. Please try again later.";
             }
-			
-          
             mysqli_stmt_close($stmt);
         }
     }
@@ -88,7 +89,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html>
 <title> Login </title>
 <?php require_once("navbar.php") ?>
-    
+
 <style>
 		#hero {
 		  background: url('images/all-icon/signin914.png') center center no-repeat;
@@ -100,8 +101,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		  height: 100%;
 		  width: 100%;
 	  }
-	  
-	  
 	  
  .sidepanel {
   height: 1000px; /* Specify a height */
@@ -208,20 +207,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 
 /* Optional: Style the caret down icon */
-.fa-caret-down {
+.fa-caret-down 
+{
   float: right;
   padding-right: 8px;
-}
-    
-
-
-
-    
-
+}   
 </style>
     
-<body>
-    
+<body> 
 	<div id="header-hero-container">
         
 <!-- Header -->
@@ -248,7 +241,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </header>
  
 <!-- section el sora (join us) --> 
-        
  <section id="hero">
 		<div class="fade"></div>
 		<div class="hero-text">

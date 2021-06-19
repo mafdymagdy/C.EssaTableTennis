@@ -5,8 +5,8 @@ $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
  
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
- 
+if($_SERVER["REQUEST_METHOD"] == "POST")
+{
     // Validate username
     if(empty(trim($_POST["username"]))){
         $username_err = "Please enter a username.";
@@ -87,8 +87,6 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
             mysqli_stmt_close($stmt);
         }
     }
-    
-  
     mysqli_close($link);
 }
 ?>
@@ -226,7 +224,6 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
 <body>
     
 	<div id="header-hero-container">
-        
 <!-- Header -->
 <header>
             <div class="flex container">
@@ -258,7 +255,6 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
 				<h1> </h1>
 			</div>
         </section>
-	
 	</div>
 
 <!-- Register Section-->
@@ -269,7 +265,6 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
 					<div id="form-container">
 					
 					<!--	<h2> Create a new account </h2> -->
-					
 						 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 						 
 							<div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>" >
@@ -297,7 +292,6 @@ $username_err = '<p class="errText">User must be bigger that 5 chars and contain
 					</div>
 				</div>
 		</section>	
-		
     
 <!-- Footer -->
         <?php require_once("Footer.php")?>
