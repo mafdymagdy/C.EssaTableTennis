@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
 <title> Delete Course </title>
 <?php require_once("navbar.php") ?>
     
@@ -19,8 +18,6 @@ if (isset($_GET['action']) && !empty($_GET['action'])) {
 }
 
 ?>
-    
-    
     <?php
 $id = $_GET['id'];
 foreach ($model->courses as $course)
@@ -36,7 +33,8 @@ foreach ($model->courses as $course)
 }
 
 ?>
-                                                <!-- CSS -->
+
+ <!-- CSS -->
     <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,9 +43,9 @@ foreach ($model->courses as $course)
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
 </head>
-                                                <!-- Style -->
+
+ <!-- Style -->
 <style>
-    
   #hero {
     background: url('images/about/about-1.jpg') center center no-repeat;
     background-size: cover;
@@ -110,9 +108,6 @@ foreach ($model->courses as $course)
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -171,9 +166,9 @@ foreach ($model->courses as $course)
   float: right;
   padding-right: 8px;
 }
-    
 </style>
-                                                <!-- Header -->
+ 
+ <!-- Header -->
 <header>
             <div class="flex container">
                 <a id="logo" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Delete Cart </a>
@@ -193,9 +188,9 @@ foreach ($model->courses as $course)
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
-    
     <div id="header-hero-container">
 
   <section id="hero">
@@ -208,8 +203,7 @@ foreach ($model->courses as $course)
       </section>
   </div>
 
-                                                <!-- Table form -->
-    
+<!-- Table form -->
     <form  method = "post" action="MyCart.php?action=deletecart">
 <div class="container jumbotron text-center">
 <div class="divTable paleBlueRows">
@@ -234,8 +228,7 @@ foreach ($model->courses as $course)
 </div>
 </form>
     
-                                                    <!-- Footer -->
+<!-- Footer -->
         <?php require_once("Footer.php") ?>
-</body>
-       
+</body>     
 </html> 

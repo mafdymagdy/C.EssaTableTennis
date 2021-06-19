@@ -15,6 +15,7 @@ else
 {
 	$query = " SELECT * FROM cartdetails ORDER BY id";
 }
+
 $result = mysqli_query($connect, $query);
 if(mysqli_num_rows($result) > 0)
 {
@@ -37,6 +38,7 @@ if(mysqli_num_rows($result) > 0)
 	}
 	echo $output;
 }
+
 else
 {
 	echo 'Data Not Found';
