@@ -5,7 +5,6 @@
     session_start();
     require_once("navbar.php") 
 ?> 
-    
 <?php 
     $idd=$_SESSION["id"]; 
 ?> 
@@ -133,7 +132,6 @@
   float: right;
   padding-right: 8px;
 }
-    
 </style>
 
 <!-- Header -->
@@ -168,7 +166,6 @@
 
 <!-- Body -->
 <body>
-    
     <div id="header-hero-container">
   <section id="hero">
       <div class="fade"></div>
@@ -203,7 +200,6 @@
 			</table>
 
 <!-- Footer -->
-        <?php require_once("Footer.php") ?>
+<?php require_once("Footer.php") ?>
 </body>
-       
 </html> 

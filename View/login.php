@@ -3,7 +3,6 @@ require_once "config.php";
 
 $username = $password = "";
 $username_err = $password_err = "";
-
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
     // Check if username is empty
@@ -78,8 +77,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             mysqli_stmt_close($stmt);
         }
     }
-    
-    
     mysqli_close($link);
 }
 ?>
@@ -247,7 +244,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 				<h1>  </h1>
 			</div>
         </section>
-	
 	</div>
 
 <!-- section Login -->
