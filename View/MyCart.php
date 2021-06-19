@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
 <title> My Personal Cart </title>
 <?php 
     session_start();
@@ -11,8 +10,7 @@
     $idd=$_SESSION["id"]; 
 ?> 
     
-    
-                                                <!-- Style -->
+<!-- Style -->
 <style>
     
   #hero {
@@ -77,9 +75,6 @@
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -140,7 +135,8 @@
 }
     
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
                 <a id="logo" href="#"> My Personal Cart </a>
@@ -152,7 +148,6 @@
                     </button>
                     
                     <ul id="nav-menu"> 
-                        
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 60px; top:45px;">
                         <li><a href="Student.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:7px;"></a></li>
                         <li><i class="fa fa-home"></i> <a href="Student.php" style = "text-decoration: none;">Home</a></li>
@@ -170,23 +165,19 @@
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
     
     <div id="header-hero-container">
-
   <section id="hero">
       <div class="fade"></div>
       <div class="hero-text">
           
           <!-- F el noss -->
-
-          
        </div>
       </section>
   </div>
-    
-    
     	<table class="table table-bordered">
 				<thead class="alert-info">
 					<tr>
@@ -210,8 +201,8 @@
 				</tbody>
 				<?php include 'calculate.php'?>
 			</table>
-    
-                                                    <!-- Footer -->
+
+<!-- Footer -->
         <?php require_once("Footer.php") ?>
 </body>
        
