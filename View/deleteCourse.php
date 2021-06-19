@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
 <title> Delete Course </title>
 <?php require_once("navbar.php") ?>
     
@@ -18,9 +17,7 @@ if (isset($_GET['action']) && !empty($_GET['action'])) {
   $controller->{$_GET['action']}();
 }
 
-?>
-    
-    
+?>    
     <?php
 $id = $_GET['id'];
 foreach ($model->courses as $course)
@@ -34,9 +31,7 @@ foreach ($model->courses as $course)
         $courseID = $course->getID();
     }
 }
-
 ?>
-
     <!-- CSS -->
     <head>
   <meta charset="utf-8">
@@ -111,9 +106,6 @@ foreach ($model->courses as $course)
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -174,7 +166,8 @@ foreach ($model->courses as $course)
 }
     
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container"  style = "position:absolute; left:80px; top:20px">
                 <a id="logo" href="#"> Delete Product </a>
@@ -198,7 +191,8 @@ foreach ($model->courses as $course)
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
     
     <div id="header-hero-container">
@@ -213,8 +207,7 @@ foreach ($model->courses as $course)
       </section>
   </div>
 
-                                                <!-- Table form -->
-    
+<!-- Table form -->    
     <form  method = "post" action="Courses.php?action=delete">
 <div class="container jumbotron text-center">
 <div class="divTable paleBlueRows">
@@ -240,8 +233,7 @@ foreach ($model->courses as $course)
 <input type="text" name="id" value="<?php echo $courseID; ?>" hidden>
 </form>
     
-                                                    <!-- Footer -->
+<!-- Footer -->
         <?php require_once("Footer.php") ?>
 </body>
-       
 </html> 

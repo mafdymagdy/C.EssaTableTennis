@@ -22,7 +22,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 {
   $controller->{$_GET['action']}();
 }
-
 ?>
     
 <?php    
@@ -179,9 +178,9 @@ foreach ($model->users2 as $user)
   float: right;
   padding-right: 8px;
 }
-    
 </style>
-                                                <!-- Header -->
+
+ <!-- Header -->
 <header>
             <div class="flex container">
                 <a id="logo" href="#"> Edit My Profile </a>
@@ -207,7 +206,6 @@ foreach ($model->users2 as $user)
 
 <!-- Body -->
 <body>
-    
     <div id="header-hero-container">
 
   <section id="hero">
