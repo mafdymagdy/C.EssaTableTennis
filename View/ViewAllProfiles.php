@@ -9,7 +9,6 @@ class ViewAllProfiles extends View
     public function output()
     {
         $str = "";
-        
         foreach($this->model->getStudents() as $user)
         {
             $faculty = new FacultyModel($user->getFacultyId());

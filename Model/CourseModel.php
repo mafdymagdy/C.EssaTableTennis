@@ -10,7 +10,6 @@ class CourseModel extends Model
     public $course_name;
     public $course_price;
     public $img;
-
     
     function __construct($id) 
   {
@@ -91,7 +90,6 @@ class CourseModel extends Model
         $this->course_price = "";
         $this->img = "";
     }
-    //$this->conn->close();
   }
 }
 ?>

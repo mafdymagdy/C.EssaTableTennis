@@ -8,7 +8,6 @@ class RespondAllMessages extends View
     public function output()
     {
         $str = "";
-        
         foreach($this->model->getContacts() as $message)
         {
             $faculty = new FacultyModel($message->getCourseFacultyId());
@@ -23,7 +22,6 @@ class RespondAllMessages extends View
             '<div class="divTableCell"> ' . $message->getAdminRespond() . " </div> ".
             '<div class="divTableCell"> ' . $message->getHRPenalty() . " </div> ".
             '<div class="divTableCell"><a href="editRespondMessage.php?id='. $message->getID() .'">Add Respond</a></div> '.
-
             '</div>';
         }
         return $str;

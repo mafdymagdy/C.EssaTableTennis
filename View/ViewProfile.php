@@ -23,7 +23,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 }
 
 ?>
-    
     <?php
     
 $id = $_GET['id'];
@@ -167,8 +166,7 @@ foreach ($model->users2 as $user)
 .fa-caret-down {
   float: right;
   padding-right: 8px;
-}
-    
+} 
 </style>
     
 <!-- Header -->
@@ -202,9 +200,7 @@ foreach ($model->users2 as $user)
     
 <!-- Body -->
 <body>
-    
     <div id="header-hero-container">
-
   <section id="hero">
       <div class="fade"></div>
       <div class="hero-text">
@@ -246,7 +242,8 @@ foreach ($model->users2 as $user)
                 <?php 
                     $mysqli=new MySQLi('localhost','root','','work3');
                     $result= $mysqli ->query("select * from usertypes");
-?>          
+                ?>    
+                      
                 <?php 
                 while ($rows=$result->fetch_assoc())
                 {

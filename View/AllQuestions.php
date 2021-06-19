@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
-    
 <title> All Questions </title>
 <?php 
     session_start();
     require_once("navbar.php") 
 ?>
-    
     <?php
   define('__ROOT__', "../");
   require_once(__ROOT__ . "Model/QuestionsModel.php");
@@ -24,7 +22,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 
 ?>
     
-                                                    <!-- CSS -->
+<!-- CSS -->
     <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +31,8 @@ if (isset($_GET['action']) && !empty($_GET['action']))
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
 </head>
-                                                <!-- Style -->
+
+ <!-- Style -->
 <style>
     
   #hero {
@@ -98,9 +97,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -159,9 +155,9 @@ if (isset($_GET['action']) && !empty($_GET['action']))
   float: right;
   padding-right: 8px;
 }
-    
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
                 <a id="logo" href="#">Message History</a>
@@ -173,7 +169,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                     </button>
                     
                     <ul id="nav-menu"> 
-                        
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 60px; top:45px;">
                         <li><a href="Student.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:20px;"></a></li>
                         <li><i class="fa fa-home"></i> <a href="Student.php" style = "text-decoration: none;">Home</a></li>
@@ -190,9 +185,9 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+ <!-- Body -->
 <body>
-    
     <div id="header-hero-container">
 
   <section id="hero">
@@ -200,12 +195,11 @@ if (isset($_GET['action']) && !empty($_GET['action']))
       <div class="hero-text">
           
           <!-- F el noss -->
-          
        </div>
       </section>
   </div>
-                                                <!-- Table form -->
-    
+
+ <!-- Table form -->  
 <form  method = "post" action="AllQuestions.php?action=insert">
 <div class="container jumbotron text-left">
 <div class="divTable paleBlueRows">
@@ -227,8 +221,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
     </div>
 </form>    
     
-                                                    <!-- Footer -->
+ <!-- Footer -->
         <?php require_once("Footer.php") ?>
 </body>
-       
 </html> 

@@ -135,7 +135,6 @@
   document.getElementById("mySidepanel").style.width = "250px";
 }
 
-
 function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
@@ -154,6 +153,6 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
-   
+
 </script>
 </footer>

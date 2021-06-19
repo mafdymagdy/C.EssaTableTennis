@@ -11,16 +11,7 @@ class QuestionController extends Controller
 	$question = $_REQUEST['question'];
 	$answer = $_REQUEST['answer'];
 
-      
-//        if(!preg_match(!empty($question)))
-//         {
               $this->model->insertQuestion($Student_id,$question,$answer);
-//        }
-//        else
-//         {
-//           // Problem: please check your inputs
-//             echo 'Problem: please check your inputs';
-//        }
         
     }
     
@@ -31,16 +22,7 @@ class QuestionController extends Controller
         $answer = $_REQUEST['answer'];
         $id =$_REQUEST['id'];
             
-//         if(!preg_match( '/^[0-9]+$/', $course_name) && is_numeric($course_price) && !empty($name) && !empty($price) && !empty($img))
-//         {
-              $this->model->editAnswer($Student_id,$question,$answer, $id);
-//        }else
-//         {
-//           // Problem: please check your inputs
-//             echo 'Problem: please check your inputs';
-//        }
-
-      
+              $this->model->editAnswer($Student_id,$question,$answer, $id);   
     }
 	
 	 public function delete()
@@ -48,6 +30,5 @@ class QuestionController extends Controller
       $id = $_REQUEST['id'];
       $this->model->deleteQuestion($id); 
     }
-
   }
 ?>

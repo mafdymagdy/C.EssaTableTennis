@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
-    
 <title> All Admins </title>
 <?php 
 require_once("navbar.php");
 ?>
-    
-    
+     
 <?php
   define('__ROOT__', "../");
   require_once(__ROOT__ . "Model/UsersModel.php");
@@ -21,7 +19,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 {
   $controller->{$_GET['action']}();
 }
-
 ?>
     
 <head>
@@ -32,9 +29,9 @@ if (isset($_GET['action']) && !empty($_GET['action']))
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
 </head>
-                                                <!-- Style -->
+
+<!-- Style -->
 <style>
-    
   #hero {
     background: url('images/all-icon/admin.jpg') center center no-repeat;
     background-size: cover;
@@ -97,9 +94,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -158,12 +152,11 @@ if (isset($_GET['action']) && !empty($_GET['action']))
   float: right;
   padding-right: 8px;
 }
-    
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
-                
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -198,9 +191,9 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+!-- Body -->
 <body>
-    
     <div id="header-hero-container">
 
   <section id="hero">
@@ -213,7 +206,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
       </section>
   </div>
 
-                                                <!-- Table Form -->
+<!-- Table Form -->
     <section >
 <form method = "post" action="AllAdmins.php?action=insert">
     <table class="table table-striped">
@@ -232,9 +225,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 </form>
         </section>  
 		
-   
-                                                    <!-- Footer -->
+ <!-- Footer -->
         <?php require_once("Footer.php") ?>
-</body>
-       
+</body>      
 </html> 
