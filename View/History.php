@@ -1,4 +1,3 @@
-
 <tfoot>
 	<tr>
 		<td align="right">
@@ -8,11 +7,14 @@
 				<form method="POST" action="">
 				</form>
 			<?php
-				}else{
+				}
+				
+				else
+				{
 					$query = mysqli_query($conn, "SELECT * FROM `questions` where Student_id=$idd") or die(mysqli_error());
 					$fetch = mysqli_fetch_array($query);
-			?>
-			<?php
+				?>
+				<?php
 				}
 			?>
 		</td>
