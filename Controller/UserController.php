@@ -17,14 +17,8 @@ class UserController extends Controller
         $img = $_REQUEST['img'];
         $id =$_REQUEST['id'];
             
-//         if(!preg_match( '/^[0-9]+$/', $course_name) && is_numeric($course_price) && !empty($name) && !empty($price) && !empty($img))
-//         {
               $this->model->editUser($username, $img,$faculty_id, $id);
-//        }else
-//         {
-//           // Problem: please check your inputs
-//             echo 'Problem: please check your inputs';
-//        }
+
     }
 	
 	public function delete()
