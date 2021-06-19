@@ -20,7 +20,6 @@ class CoursesModel extends Model
     while ($row = $result->fetch_assoc()) {
      array_push($this->courses, new CourseModel($row["id"],$row["course_faculty_id"],$row["course_name"],$row["course_price"],$row["img"]));
     }
-    
   }
 
   function getCourses() {
@@ -55,7 +54,6 @@ class CoursesModel extends Model
         } else{
             echo "ERROR: Could not able to execute $sql. " . $conn->error;
         }
-
   }
   
   function editCourse($course_faculty_id,$course_name,$course_price,$img, $id)
@@ -104,7 +102,7 @@ class CoursesModel extends Model
     }
   }
     
-        	function insertCart($user_id, $user_name, $course_id, $course_name, $course_pricee)
+        function insertCart($user_id, $user_name, $course_id, $course_name, $course_pricee)
     {
         $sql = "INSERT INTO cartdetails (user_id, user_name, course_id, course_name, course_pricee) VALUES ('$user_id', '$user_name', '$course_id', '$course_name' ,'$course_pricee')";
 		if($this->dbh->query($sql) === true)
@@ -177,6 +175,5 @@ class CoursesModel extends Model
 			$i++;
 		}
 		return $ObjArray;
-	}
-    
+	}   
 }

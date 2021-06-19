@@ -21,7 +21,6 @@ class CartDetailsModel extends Model
       $this->id = $id;
     }
   }
-    
         function getUserId() {
     return $this->user_id;
   }
@@ -46,8 +45,6 @@ class CartDetailsModel extends Model
     return $this->id;
   }
 
-
-    
       function readCartDetails($id)
   {
     $sql = "SELECT * FROM cartdetails where id=".$id;
@@ -68,7 +65,5 @@ class CartDetailsModel extends Model
         $this->course_id = "";
 		$this->course_pricee="";
     }
-    //$this->conn->close();
-  }
-	 
+  } 
 }
