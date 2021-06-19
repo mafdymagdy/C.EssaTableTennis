@@ -21,7 +21,6 @@ class CartsDetailsModel extends Model
 			array_push($this->cartsdetails, new CartDetailsModel($row["id"],$row["user_id"],$row["course_id"],$row["course_pricee"]));
 		}
 	}
- 
 
 	function getCartDetails() {
 		return $this->cartsdetails;
@@ -69,6 +68,5 @@ class CartsDetailsModel extends Model
         echo "ERROR: Could not able to execute $sql. " . $conn->error;
     }
   }
-    
 }
 ?>
