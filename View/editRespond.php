@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-    
 <title> Respond specific question </title>
 <?php require_once("navbar.php") ?>
     
-        <?php
+  <?php
   define('__ROOT__', "../");
   require_once(__ROOT__ . "Model/QuestionsModel.php");
   require_once(__ROOT__ . "Controller/QuestionController.php");
@@ -29,15 +28,12 @@ foreach ($model->questions as $question)
         $studentQuestion = $question->getQuestion();
         $studentAnswer = $question->getAnswer();
         $questionID = $question->getID();
-        
-//        $user= new UserModel($studentId);
-//        $user_name=$user->username;
     }
 }
 
 ?>
     
-                                                <!-- CSS -->
+<!-- CSS -->
     <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +43,7 @@ foreach ($model->questions as $question)
   <link rel="stylesheet" href="http://localhost/LMS_Project/lib/css/mycss.css">
 </head>
     
-                                                <!-- Style -->
+<!-- Style -->
 <style>
     
   #hero {
@@ -112,9 +108,6 @@ foreach ($model->questions as $question)
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -173,9 +166,9 @@ foreach ($model->questions as $question)
   float: right;
   padding-right: 8px;
 }
-    
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
                 <a id="logo" href="#" style = "position:absolute; left:120px; top:20px"> Respond specific question </a>
@@ -200,7 +193,8 @@ foreach ($model->questions as $question)
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
     
     <div id="header-hero-container">
@@ -215,8 +209,7 @@ foreach ($model->questions as $question)
       </section>
   </div>
     
-                                                <!-- Table form -->
-  
+<!-- Table form -->
     <form  method = "post" action="RespondQuestions.php?action=edit">
 <div class="container jumbotron text-center">
 <div class="divTable paleBlueRows">
@@ -238,9 +231,6 @@ foreach ($model->questions as $question)
         <div class="divTableCell"> 
         <input type="varchar" maxlength="30" id="question"  name="question" required value="<?php echo $studentQuestion ?>" hidden> 
     </div>
-    
-    
-    
 
     <div class="divTableCell"> <button type="submit" class="btn btn-default">Confirm Respond?</button> </div>
     
@@ -250,7 +240,7 @@ foreach ($model->questions as $question)
 <input type="text" name="id" value="<?php echo $questionID; ?>" hidden>
 </form>
     
-                                                    <!-- Footer -->
+<!-- Footer -->
         <?php require_once("Footer.php") ?>
 </body>
        
