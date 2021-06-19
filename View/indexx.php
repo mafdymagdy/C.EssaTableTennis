@@ -3,6 +3,7 @@
     <title>C.Essa Table Tennis</title>
   <?php require_once("navbar.php")?>
 <style>
+    
 #hero 
 {
   background: url('images/C.EssaTableTennis/Logo2.jpg') center center no-repeat;
@@ -238,6 +239,7 @@
 }
 
 </style>
+    
 <body>
     <div id="header-hero-container">
 <!-- Header -->
@@ -257,13 +259,7 @@
                         <li><a href="aboutus.php">About Us</a></li>
                         <li><a href="Signup.php">Sign-Up</a></li>
                         <li><a href="login.php">Sign-In</a></li>
-                        
-                        
-                            </div>
-                         
-                        
-                        
-
+                        </div>
                     </ul>
                 </nav>
             </div>

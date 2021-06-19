@@ -243,7 +243,6 @@ foreach ($model->users2 as $user)
             </div>
             
             <div class="row details">
-            
                 <?php 
                     $mysqli=new MySQLi('localhost','root','','work3');
                     $result= $mysqli ->query("select * from usertypes");
@@ -255,7 +254,6 @@ foreach ($model->users2 as $user)
                     $id=$rows['id'];
                 }
             ?>
-                
             <h1> <label > Type: </label> <?php echo $usertype_name ?> </h1>
             </div>
      </div>          

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
 <title> About Us </title>
 <?php require_once("navbar.php") ?>
     
@@ -67,9 +66,6 @@
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -129,8 +125,7 @@
   padding-right: 8px;
 }
     
-</style>
-    
+</style>   
 <body>
   <div id="header-hero-container">
       <header> 
@@ -154,6 +149,7 @@
                 </nav>
             </div>
     </header>
+      
   <section id="hero">
       <div class="fade"></div>
       <div class="hero-text">
@@ -163,26 +159,28 @@
                         <div class="about-singel-items mt-30">
                             <h4><font color="red">01. Why Choose Us</font></h4>
                             <p><font color="white">The facilities here for your training are second to none.</font></p>
-                        </div> <!-- about single -->
+                        </div>
                     </div>
+                    
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="about-singel-items mt-30">
                             <h4><font color="red">02. Mission</font></h4>
                             <p><font color="white">C.Essa's mission is to develop world class table tennis players by identifying, nurturing and motivating aspiring table-tennis talents to become the best that they could be. He is is also committed to promoting table tennis vigorously by building a significant number of table tennis players to help make a vibrant sporting here in Egypt.</font></p>
                         </div> <!-- about singel -->
                     </div>
+                    
                     <div class="col-lg-4 col-md-6 col-sm-10">
                         <div class="about-singel-items mt-30">
                             <h4><font color="red">03. Vission</font></h4>
-                            <p><font color="white">C.Essa’s Vision is to consolidate the popular sport of table tennis in Egypt. To achieve this, we strive to offer everyone the opportunity to acquire table tennis training, promoting a quality of life so one can live, work and play. Our academy also aims at promoting the sport to higher levels through collaboration with qualified coaches and clubs in order to develop holistic athletes that also compete at international levels.
-                                </font></p>
-                        </div> <!-- about singel -->
+                            <p><font color="white">C.Essa’s Vision is to consolidate the popular sport of table tennis in Egypt. To achieve this, we strive to offer everyone the opportunity to acquire table tennis training, promoting a quality of life so one can live, work and play. Our academy also aims at promoting the sport to higher levels through collaboration with qualified coaches and clubs in order to develop holistic athletes that also compete at international levels.</font></p>
+                        </div>
                     </div>
                 </div> <!-- row -->
             </div>
-      </div>
-        </section>
-    </div>
+       </div>
+    </section>
+</div>
+    
 <!-- Footer -->
         <?php require_once("Footer.php") ?>
 </body> 
