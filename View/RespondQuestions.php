@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-    
 <title> Respond Questions </title>
 <?php require_once("navbar.php") ?>
     
-        <?php
+  <?php
   define('__ROOT__', "../");
   require_once(__ROOT__ . "Model/QuestionsModel.php");
   require_once(__ROOT__ . "Controller/QuestionController.php");
@@ -21,7 +20,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 
 ?>
     
-                                                <!-- CSS -->
+!-- CSS -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -96,9 +95,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -159,7 +155,8 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 }
     
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
                 
@@ -173,14 +170,11 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                     <ul id="nav-menu"> 
                         
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 230px; top:30px;">
-                        
-                        
+
                         <li><a href="Admin.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:20px; top:7px;"></a></li>
-                        
-                        
+
                         <li><i class="fa fa-home"></i> <a href="Admin.php" style = "text-decoration: none;">Home</a></li>
 
-                        
                         <li><a href="Courses.php"> A/E/D Product </a></li>
                         
                         <li ><a href="SearchOrders.php"> Search Orders </a></li>            
@@ -198,9 +192,9 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                 </nav>
             </div>
     </header>
-                                                <!-- Body -->
+
+<!-- Body -->
 <body>
-    
     <div id="header-hero-container">
 
   <section id="hero">
@@ -231,9 +225,7 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 <?php
       echo $view->output();
 
-?>
-    
-      
+?>  
 </div>
 </div>
     </div>
