@@ -8,7 +8,6 @@
     
 <!-- Style -->
 <style>
-    
   #hero {
     background: url('images/about/TableTennisTablee.jpg') center center no-repeat;
     background-size: cover;
@@ -71,9 +70,6 @@
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -134,7 +130,7 @@
 }
     
 </style>
-                                                <!-- Header -->
+<!-- Header -->
 <header>
             <div class="flex container" >
                 <a id="logo" href="#">Trainee </a>

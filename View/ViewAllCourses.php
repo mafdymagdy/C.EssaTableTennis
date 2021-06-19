@@ -7,7 +7,6 @@ class ViewAllCourses extends View
     public function output()
     {
         $str = "";
-        
         foreach($this->model->getCourses() as $course)
         {
             $faculty = new FacultyModel($course->getCourseFacultyId());
