@@ -9,7 +9,6 @@ class ViewAllProfiles extends View
     public function output()
     {
         $str = "";
-        
         foreach($this->model->getStudents() as $user)
         {
             $faculty = new FacultyModel($user->getFacultyId());
@@ -21,8 +20,6 @@ class ViewAllProfiles extends View
             '<div class="divTableCell"> ' . $faculty->getFaculty() . " </div> ".
             '<div class="divTableCell"> ' . $type->getType() . " </div> ".
             '<div class="divTableCell"> ' . $user->getCreatedAt() . " </div> ".
-//            '<div class="divTableCell"><a href="ViewProfile.php?id='. $user->getID() .'">View</a></div>'.
-//            '<div class="divTableCell"><a href="editProfile.php?id='. $user->getID() .'">Edit</a></div> '.
             '</div>';
         }
         return $str;

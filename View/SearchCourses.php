@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -11,9 +10,9 @@
 <?php 
     session_start();
     require_once("navbar.php") ?>
-                                                <!-- Style -->
-<style>
-    
+
+<!-- Style -->
+<style> 
   #hero {
     background: url('images/about/solid.jpg') center center no-repeat;
     background-size: cover;
@@ -76,9 +75,6 @@
   background-color: #FFA500;
 }	
 
-
-
-
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
@@ -139,7 +135,8 @@
 }
     
 </style>
-                                                <!-- Header -->
+
+<!-- Header -->
 <header>
             <div class="flex container">
                 <a id="logo" href="#">Course Search </a>
@@ -205,10 +202,8 @@
 		<br />
 		<br />
     
-    
-                                                    <!-- Footer -->
+  <!-- Footer -->
 <?php require_once("Footer.php") ?>
-    
     
 <script>
 $(document).ready(function(){
@@ -238,8 +233,7 @@ $(document).ready(function(){
 		}
 	});
 });
+
 </script>
-    
-</body>
-       
+</body>   
 </html> 
