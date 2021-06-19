@@ -205,7 +205,6 @@
   <!-- Footer -->
 <?php require_once("Footer.php") ?>
     
-    
 <script>
 $(document).ready(function(){
 	load_data();

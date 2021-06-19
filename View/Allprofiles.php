@@ -17,7 +17,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 {
   $controller->{$_GET['action']}();
 }
-
 ?>
     
 <!-- CSS -->
@@ -151,13 +150,12 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 .fa-caret-down {
   float: right;
   padding-right: 8px;
-}
-    
+}    
 </style>
-                                                <!-- Header -->
+
+!-- Header -->
 <header>
             <div class="flex container">
-        
                 <nav>
                     <button id="nav-toggle" class="hamburger-menu">
                         <span class="strip"></span>
@@ -172,7 +170,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
                         
                         
                         <li><i class="fa fa-home"></i> <a href="Admin.php" style = "text-decoration: none;">Home</a></li>
-                        
                         
                         <li><a href="Courses.php"> A/E/D Product </a></li>
                         
@@ -194,14 +191,12 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 <!-- Body -->
 <body>
     <div id="header-hero-container">
-
   <section id="hero">
       <div class="fade"></div>
       <div class="hero-text">
           
           <!-- F el noss -->
           <h2 style=" color: white">All Trainees Profiles </h2>
-          
        </div>
       </section>
   </div>
@@ -228,7 +223,6 @@ if (isset($_GET['action']) && !empty($_GET['action']))
 ?>
  
 </div>
-    
 </div>
     </div>
 </form>      
