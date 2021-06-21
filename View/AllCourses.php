@@ -139,7 +139,7 @@
 @media screen and (width: 65 px) {
   .column {
     width: 50%;
-    display: ;
+    display: block;
   }
 }
 

@@ -15,7 +15,7 @@ class ViewAllProfiles extends View
             $type = new UserTypesModel($user->getUserTypeId());
             $str= $str . '<div class="divTableRow">'.
             '<div class="divTableCell"> <img style="height:100px; weight:10px" 
-            src="../View/images/Students/' . $user->getImage() . '"> </div> '.
+            src="../View/images/Trainees/' . $user->getImage() . '"> </div> '.
             '<div class="divTableCell"> ' . $user->getUserName() . " </div> ".
             '<div class="divTableCell"> ' . $faculty->getFaculty() . " </div> ".
             '<div class="divTableCell"> ' . $type->getType() . " </div> ".
