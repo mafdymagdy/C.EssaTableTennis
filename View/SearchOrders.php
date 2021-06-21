@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -155,7 +156,7 @@
         <span class="strip"></span>
         <span class="strip"></span>
       </button>
-
+      
       <ul id="nav-menu">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style="position: fixed; right: 100px; top:30px;">
 
@@ -173,7 +174,6 @@
           <li><a href="logout.php"> Logout </a></li>
         </div>
       </ul>
-
     </nav>
   </div>
 </header>
@@ -192,29 +192,29 @@
   </div>
 
   <div class="container">
-    <br />
-    <br />
-    <br />
+    <br/>
+    <br/>
+    <br/>
     <h2 align="center" style="color:red;">Search Now about any order </h2><br />
     <div class="form-group">
       <div class="input-group">
         <span class="input-group-addon">Search</span>
-        <input type="text" name="search_text" id="search_text" placeholder="Search by Trainee Name or Course Name or Course Price " class="form-control" />
+        <input type="text" name="search_text" id="search_text" placeholder="Search by Trainee Name or Course Name or Course Price " class="form-control"/>
       </div>
     </div>
     <br />
     <div id="result"></div>
   </div>
   <div style="clear:both"></div>
-  <br />
-  <br />
-  <br />
-  <br />
+  <br/>
+  <br/>
+  <br/>
+  <br/>
 
   <script>
-    $(document).ready(function() {
+    $(document).ready(function() 
+    {
       load_data();
-
       function load_data(query) {
         $.ajax({
           url: "fetchOrders.php",
