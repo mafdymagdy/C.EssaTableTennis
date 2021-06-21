@@ -3,7 +3,6 @@ require_once(__ROOT__ . "View/View.php");
 require_once(__ROOT__ . "Model/FacultyModel.php");
 require_once(__ROOT__ . "Model/UserTypesModel.php");
 
-
 class ViewAllProfiles extends View
 {
     public function output()
@@ -24,4 +23,4 @@ class ViewAllProfiles extends View
         }
         return $str;
     }
-}?>
+}
