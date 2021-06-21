@@ -45,7 +45,7 @@ class CartsDetailsModel extends Model
 		if($this->dbh->query($sql) === true)
         {
 			//echo "Records inserted successfully.";
-            header("location:../View/Student.php");
+            header("location:../View/Trainee.php");
 			$this->fillArray();
 		} 
 		else

@@ -99,7 +99,7 @@ class UsersModel extends Model
     if($this->dbh->query($sql) === true)
 	{
         echo "Profile edited successfully.";
-        header("location:../View/Student.php");
+        header("location:../View/Trainee.php");
         $this->fillArray();
     } else{
         echo "ERROR: Could not able to execute $sql. ";

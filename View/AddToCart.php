@@ -185,8 +185,8 @@ foreach ($model->courses as $course)
                     <ul id="nav-menu"> 
                         
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style = "position: fixed; right: 60px; top:45px;">
-                        <li><a href="Student.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:10px;"></a></li>
-                        <li><i class="fa fa-home"></i> <a href="Student.php" style = "text-decoration: none;">Home</a></li>
+                        <li><a href="Trainee.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:10px;"></a></li>
+                        <li><i class="fa fa-home"></i> <a href="Trainee.php" style = "text-decoration: none;">Home</a></li>
 
                         <li><a href="AllCourses.php"> Product </a></li>
                         <li><a href="logout.php"> Logout </a></li> 

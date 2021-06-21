@@ -192,8 +192,8 @@ foreach ($model->users2 as $user)
                     </button>
                     
                     <ul id="nav-menu"> 
-                        <li><a href="Student.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:7px;"></a></li>
-                        <li><i class="fa fa-home"></i> <a href="Student.php" style = "text-decoration: none;">Home</a></li>
+                        <li><a href="Trainee.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:7px;"></a></li>
+                        <li><i class="fa fa-home"></i> <a href="Trainee.php" style = "text-decoration: none;">Home</a></li>
 
                         <li style="text-align: left"><a href="ViewProfile.php?id=<?php echo $_SESSION["id"];?>" > My Profile </a></li> 
                         

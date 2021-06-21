@@ -192,8 +192,8 @@
                     
                     <ul id="nav-menu"> 
                         <div style = "position: fixed; right: 60px; top:45px;">
-                        <li><a href="Student.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:20px;"></a></li>
-                        <li><i class="fa fa-home"></i> <a href="Student.php" style = "text-decoration: none;">Home</a></li>
+                        <li><a href="Trainee.php"><img src="images/C.EssaTableTennis/Logo1.jpg" alt="Logo" style="width:70px;height:70px;  position:fixed; left:100px; top:20px;"></a></li>
+                        <li><i class="fa fa-home"></i> <a href="Trainee.php" style = "text-decoration: none;">Home</a></li>
                         
                         <li><a href="WriteQuestion.php"> Write Question </a></li>
                         <li><a href="AllQuestions.php"> All Questions </a></li>

@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               $_SESSION["type"] = $user_type_id;
 
               if ($user_type_id == "1")
-                header("location: Student.php");
+                header("location: Trainee.php");
 
               else if ($user_type_id == "2")
                 header("location: Admin.php");
