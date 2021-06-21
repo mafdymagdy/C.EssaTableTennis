@@ -27,6 +27,5 @@ class CartController extends Controller
       $id = $_REQUEST['id'];
       $this->model->deleteCart($id); 
     }
-
   }
 ?>
