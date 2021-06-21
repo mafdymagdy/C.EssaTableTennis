@@ -9,7 +9,7 @@ class ViewAllProfiles extends View
     public function output()
     {
         $str = "";
-        foreach($this->model->getStudents() as $user)
+        foreach($this->model->getTrainees() as $user)
         {
             $faculty = new FacultyModel($user->getFacultyId());
             $type = new UserTypesModel($user->getUserTypeId());

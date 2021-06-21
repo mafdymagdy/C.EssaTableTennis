@@ -14,6 +14,7 @@ class UsersModel extends Model
 		$this->fillArray2();
 	}
 
+	// Array for admins
 	function fillArray() 
     {
 		$this->users = array();
@@ -25,6 +26,7 @@ class UsersModel extends Model
 		}
 	}
     
+	// Array for Trainees
     function fillArray2() {
 		$this->users2 = array();
 		$this->dbh = $this->connect();
@@ -35,14 +37,15 @@ class UsersModel extends Model
 		}
 	}
     
-    function getStudents() {
-        return $this->users2;
-	}
-
 	function getAdmins() {
 		return $this->users;
 	}
 
+    function getTrainees() {
+        return $this->users2;
+	}
+
+	// Admin id is 2
 	function readAdmins()
     {
 		$sql = "SELECT * FROM user WHERE user_type_id=2";
@@ -56,9 +59,10 @@ class UsersModel extends Model
 			return false;
 		}
 	}
-    
 
-	function readtrainees(){
+	// trainee id is 1
+	function readtrainees()
+	{
 		$sql = "SELECT * FROM user WHERE user_type_id=1";
 
 		$result = $this->dbh->query($sql);
@@ -71,51 +75,53 @@ class UsersModel extends Model
 		}
 	}
 
+	// Insert Admin
 	function insertUser($username, $password,$user_type_id,$faculty_id,$img)
     {
         $sql = "INSERT INTO user (username, password,user_type_id,faculty_id,img) VALUES ('$username','$password','$user_type_id','$faculty_id','$img')";
 		if($this->dbh->query($sql) === true)
         {
-			//echo "Records inserted successfully.";
             header("location:../View/AllAdmins.php");
 			$this->fillArray();
 		} 
 		else
         {
-			echo "ERROR: Could not able to execute $sql. " . $conn->error;
+			echo "ERROR: Could not able to execute $sql. ";
 		}
 	}
-    
-      function editUser($username, $img,$faculty_id, $id)
-  {
 
+	// Update User
+    function editUser($username, $img,$faculty_id, $id)
+  	{
     $sql = "UPDATE user
             SET username = '$username' , img = '$img' , faculty_id = '$faculty_id' WHERE id=$id";
 
-    if($this->dbh->query($sql) === true){
+    if($this->dbh->query($sql) === true)
+	{
         echo "Profile edited successfully.";
         header("location:../View/Student.php");
         $this->fillArray();
     } else{
-        echo "ERROR: Could not able to execute $sql. " . $conn->error;
+        echo "ERROR: Could not able to execute $sql. ";
     }
   }
     
+  // Delete Admin
     function deleteUser($id)
   {
-    
     $sql = "DELETE FROM user 
             WHERE id=$id";
 
-    if($this->dbh->query($sql) === true){
-        //echo "user deleted successfully.";
+    if($this->dbh->query($sql) === true)
+	{
         header("location:../View/AllAdmins.php");
         $this->fillArray();
     } else{
-        echo "ERROR: Could not able to execute $sql. " . $conn->error;
+        echo "ERROR: Could not able to execute $sql. ";
     }
   }
  
+    // Edit Password
     function reset_password($id,$password)
     {
         $sql="UPDATE `user` SET `password`='$password' WHERE id=$id";
@@ -124,6 +130,7 @@ class UsersModel extends Model
         
     }
     
+	// User SignIn
     function login($username, $password){
 	$sql = "SELECT * FROM user WHERE username='$username' and password='$password'";
         echo $sql;
@@ -133,10 +140,5 @@ class UsersModel extends Model
 		$row = $dbh->fetchRow();
         return $row;
 		} 
-//		else
-//       {
-//			echo "ERROR: Could not able to execute $sql. " . $conn->error;
-//		}
     }
 }
-?>

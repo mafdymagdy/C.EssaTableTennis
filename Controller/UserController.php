@@ -1,5 +1,6 @@
 <?php
 require_once(__ROOT__ . "Controller/Controller.php");
+
 class UserController extends Controller
 {
 	public function insert() 
@@ -17,8 +18,7 @@ class UserController extends Controller
         $img = $_REQUEST['img'];
         $id =$_REQUEST['id'];
             
-              $this->model->editUser($username, $img,$faculty_id, $id);
-
+        $this->model->editUser($username, $img,$faculty_id, $id);
     }
 	
 	public function delete()
