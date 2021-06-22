@@ -86,6 +86,7 @@ class UserModel extends Model
     $sql = "SELECT * FROM user where id=" . $id;
     $dbh = $this->connect();
     $result = $dbh->query($sql);
+    
     if ($result->num_rows == 1) {
       $row = $dbh->fetchRow();
       $this->id = $row["id"];

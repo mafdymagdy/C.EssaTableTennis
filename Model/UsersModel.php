@@ -91,7 +91,7 @@ class UsersModel extends Model
 	}
 
 	// Update User
-    function editUser($username, $img,$faculty_id, $id)
+    function editUser($username, $img, $faculty_id, $id)
   	{
     $sql = "UPDATE user
             SET username = '$username' , img = '$img' , faculty_id = '$faculty_id' WHERE id=$id";
